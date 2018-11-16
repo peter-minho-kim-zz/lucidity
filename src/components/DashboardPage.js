@@ -1,9 +1,9 @@
 import React from 'react'
 
-const DreamWalkerDashboardPage = () => (
+const DashboardPage = () => (
   <div>
     This is from my dashboard component
   </div>
 )
 
-export default DreamWalkerDashboardPage
+export default DashboardPage
