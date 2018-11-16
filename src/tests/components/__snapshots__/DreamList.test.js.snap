@@ -1,0 +1,41 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render DreamList with dreams 1`] = `
+<div>
+  <DreamListItem
+    createdAt={0}
+    dreamType="normal"
+    entry="this is dream one entry"
+    hoursSlept={6}
+    id="1"
+    key="1"
+    title="dream one"
+  />
+  <DreamListItem
+    createdAt={-345600000}
+    dreamType="lucid"
+    entry="this is dream two entry"
+    hoursSlept={7}
+    id="2"
+    key="2"
+    title="dream two"
+  />
+  <DreamListItem
+    createdAt={345600000}
+    dreamType="nightmare"
+    entry="this is dream three entry"
+    hoursSlept={8}
+    id="3"
+    key="3"
+    title="dream three"
+  />
+</div>
+`;
+
+exports[`should render DreamList with empty message 1`] = `
+<div>
+  <p>
+    No dreams
+  </p>
+</div>
+`;

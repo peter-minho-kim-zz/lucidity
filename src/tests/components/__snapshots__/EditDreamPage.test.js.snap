@@ -1,0 +1,24 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render EditDreamPage 1`] = `
+<div>
+  <DreamForm
+    dream={
+      Object {
+        "createdAt": 345600000,
+        "dreamType": "nightmare",
+        "entry": "this is dream three entry",
+        "hoursSlept": 8,
+        "id": "3",
+        "title": "dream three",
+      }
+    }
+    onSubmit={[Function]}
+  />
+  <button
+    onClick={[Function]}
+  >
+    Remove
+  </button>
+</div>
+`;

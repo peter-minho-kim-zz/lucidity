@@ -1,0 +1,31 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render Dream list item 1`] = `
+<div>
+  <Link
+    replace={false}
+    to="/edit/1"
+  >
+    <h3>
+      title: 
+      dream one
+    </h3>
+  </Link>
+  <p>
+    entry: 
+    this is dream one entry
+  </p>
+  <p>
+    dreamType: 
+    normal
+  </p>
+  <p>
+    createdAt: 
+    0
+  </p>
+  <p>
+    hours slept: 
+    6
+  </p>
+</div>
+`;
