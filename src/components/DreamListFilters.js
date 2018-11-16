@@ -43,13 +43,13 @@ export class DreamListFilters extends React.Component {
           value={this.props.filters.dreamFilter}
           onChange={(e) => {
             if (e.target.value === 'all') {
-              this.props.dispatch(setDreamFilter('all'))
+              this.props.setDreamFilter('all')
             } else if (e.target.value === 'normal') {
-              this.props.dispatch(setDreamFilter('normal'))
+              this.props.setDreamFilter('normal')
             } else if (e.target.value === 'lucid') {
-              this.props.dispatch(setDreamFilter('lucid'))
+              this.props.setDreamFilter('lucid')
             } else if (e.target.value === 'nightmare') {
-              this.props.dispatch(setDreamFilter('nightmare'))
+              this.props.setDreamFilter('nightmare')
             }
 
           }}
@@ -80,6 +80,7 @@ const mapStateToProps = (state) => ({
 
 const mapDispatchToProps = (dispatch) => ({
   setTextFilter: (text) => dispatch(setTextFilter(text)),
+  setDreamFilter: (dreamType) => dispatch(setDreamFilter(dreamType)),
   sortByDate: () => dispatch(sortByDate()),
   sortByHoursSlept: () => dispatch(sortByHoursSlept()),
   setStartDate: (startDate) => dispatch(setStartDate(startDate)),
