@@ -19,7 +19,7 @@ class Charts extends React.Component {
     }
   }
   render() {
-    console.log(this.props.dreams)
+    // console.log(this.props.dreams)
     return (
       <div>
         CHART COMPONENT
