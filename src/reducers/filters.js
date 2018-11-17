@@ -5,8 +5,10 @@ const filtersReducerDefaultState = {
   text: '',
   sortBy: 'date',
   dreamFilter: 'all',
-  startDate: moment().startOf('month'),
-  endDate: moment().endOf('month')
+  startDate: undefined,
+  endDate: undefined
+  // startDate: moment().startOf('month'),
+  // endDate: moment().endOf('month')
 }
 
 const filtersReducer = (state = filtersReducerDefaultState, action) => {
