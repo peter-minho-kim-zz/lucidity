@@ -12,6 +12,7 @@ class DreamForm extends React.Component {
       hoursSlept: props.dream ? props.dream.hoursSlept.toString() : '',
       dreamType: props.dream ? props.dream.dreamType : 'normal',
       createdAt: props.dream ? moment(props.dream.createdAt) : moment(),
+      lucidityLevel: props.dream ? props.dream.lucidityLevel : 0,
       calendarFocused: false,
       error: '',
       buttonText: ''
@@ -40,6 +41,10 @@ class DreamForm extends React.Component {
       this.setState(() => ({ createdAt }))
     }
   }
+  onSliderChange = (e) => {
+    const lucidityLevel = e.target.value
+    this.setState(() => ({ lucidityLevel }))
+  }
   onFocusChange = ({ focused }) => {
     this.setState(() => ({ calendarFocused: focused }))
   }
@@ -56,7 +61,8 @@ class DreamForm extends React.Component {
         entry: this.state.entry,
         hoursSlept: parseFloat(this.state.hoursSlept, 10),
         createdAt: this.state.createdAt.valueOf(),
-        dreamType: this.state.dreamType
+        dreamType: this.state.dreamType,
+        lucidityLevel: parseFloat(this.state.lucidityLevel, 10)
       })
     }
   }
@@ -101,6 +107,12 @@ class DreamForm extends React.Component {
             value={this.state.entry}
             onChange={this.onEntryChange}>
           </textarea>
+          <input 
+            onChange={this.onSliderChange} 
+            type="range" 
+            min="0" 
+            max="5" 
+            value={this.state.lucidityLevel} />
           <button>
             {this.state.buttonText}
           </button>

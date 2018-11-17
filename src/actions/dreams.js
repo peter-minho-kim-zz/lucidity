@@ -1,7 +1,7 @@
 import uuid from 'uuid'
 
 // ADD_DREAM
-export const addDream = ({ title = '', entry = '', hoursSlept = 0, dreamType = '', createdAt = 0 } = {}) => ({
+export const addDream = ({ title = '', entry = '', hoursSlept = 0, dreamType = '', createdAt = 0, lucidityLevel = 0 } = {}) => ({
   type: 'ADD_DREAM',
   dream: {
     id: uuid(),
@@ -9,7 +9,8 @@ export const addDream = ({ title = '', entry = '', hoursSlept = 0, dreamType = '
     entry,
     hoursSlept,
     dreamType,
-    createdAt
+    createdAt,
+    lucidityLevel
   }
 })
 

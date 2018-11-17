@@ -14,7 +14,6 @@ import './firebase/firebase'
 
 const store = configureStore()
 
-
 const now = moment.now()
 store.dispatch(addDream({
   title: 'Empty Cell Mystery',
@@ -26,7 +25,8 @@ store.dispatch(addDream({
           it. How will Andy escape from the cell? `,
   hoursSlept: 7,
   dreamType: 'normal',
-  createdAt: moment(now)
+  createdAt: moment(now), 
+  lucidityLevel: 4
 }))
 
 store.dispatch(addDream({
@@ -37,7 +37,8 @@ store.dispatch(addDream({
           The drinks were poisoned, but only Marissa died. How?`,
   hoursSlept: 10,
   dreamType: 'lucid',
-  createdAt: moment(now).subtract(2, 'days')
+  createdAt: moment(now).subtract(2, 'days'),
+  lucidityLevel: 2
 }))
 
 store.dispatch(addDream({
@@ -53,7 +54,8 @@ store.dispatch(addDream({
           that?`,
   hoursSlept: 7,
   dreamType: 'nightmare',
-  createdAt: moment(now).subtract(4, 'days')
+  createdAt: moment(now).subtract(4, 'days'),
+  lucidityLevel: 3
 }))
 
 store.dispatch(addDream({
@@ -67,7 +69,8 @@ store.dispatch(addDream({
           her sister?`,
   hoursSlept: 6,
   dreamType: 'normal',
-  createdAt: moment(now).subtract(6, 'days')
+  createdAt: moment(now).subtract(6, 'days'),
+  lucidityLevel: 2
 }))
 
 store.dispatch(addDream({
@@ -79,7 +82,8 @@ store.dispatch(addDream({
           day, the police arrested Nicole for fraud. Why?`,
   hoursSlept: 8,
   dreamType: 'lucid',
-  createdAt: moment(now).subtract(8, 'days')
+  createdAt: moment(now).subtract(8, 'days'),
+  lucidityLevel: 5
 }))
 
 store.dispatch(addDream({
@@ -96,7 +100,8 @@ store.dispatch(addDream({
           The captain immediately knew who it was. How?`,
   hoursSlept: 8,
   dreamType: 'nightmare',
-  createdAt: moment(now).subtract(10, 'days')
+  createdAt: moment(now).subtract(10, 'days'),
+  lucidityLevel: 2
 }))
 
 store.dispatch(addDream({
@@ -111,7 +116,8 @@ store.dispatch(addDream({
           teacher and how did the police know?`,
   hoursSlept: 6,
   dreamType: 'normal',
-  createdAt: moment(now).subtract(12, 'days')
+  createdAt: moment(now).subtract(12, 'days'),
+  lucidityLevel: 4
 }))
 
 store.dispatch(addDream({
@@ -124,7 +130,8 @@ store.dispatch(addDream({
           poisonous pill?`,
   hoursSlept: 6,
   dreamType: 'lucid',
-  createdAt: moment(now).subtract(14, 'days')
+  createdAt: moment(now).subtract(14, 'days'),
+  lucidityLevel: 5
 }))
 
 store.dispatch(addDream({
@@ -135,7 +142,8 @@ store.dispatch(addDream({
           they know he did it?`,
   hoursSlept: 7,
   dreamType: 'nightmare',
-  createdAt: moment(now).subtract(16, 'days')
+  createdAt: moment(now).subtract(16, 'days'),
+  lucidityLevel: 3
 }))
 
 store.dispatch(addDream({
@@ -147,7 +155,8 @@ store.dispatch(addDream({
           the murderer right away. How did they know who it was?`,
   hoursSlept: 5,
   dreamType: 'normal',
-  createdAt: moment(now).subtract(18, 'days')
+  createdAt: moment(now).subtract(18, 'days'),
+  lucidityLevel: 2
 }))
 
 store.dispatch(addDream({
@@ -159,7 +168,8 @@ store.dispatch(addDream({
           How?`,
   hoursSlept: 9,
   dreamType: 'lucid',
-  createdAt: moment(now).subtract(20, 'days')
+  createdAt: moment(now).subtract(20, 'days'),
+  lucidityLevel: 3
 }))
 
 store.dispatch(addDream({
@@ -173,7 +183,8 @@ store.dispatch(addDream({
           that door!” The jury immediately gave a guilty verdict. Why?`,
   hoursSlept: 10,
   dreamType: 'nightmare',
-  createdAt: moment(now).subtract(22, 'days')
+  createdAt: moment(now).subtract(22, 'days'),
+  lucidityLevel: 3
 }))
 
 store.dispatch(addDream({
@@ -186,7 +197,8 @@ store.dispatch(addDream({
           travel agent say to the detective?`,
   hoursSlept: 10,
   dreamType: 'normal',
-  createdAt: moment(now).subtract(24, 'days')
+  createdAt: moment(now).subtract(24, 'days'),
+  lucidityLevel: 2
 }))
 
 store.dispatch(addDream({
@@ -198,7 +210,8 @@ store.dispatch(addDream({
           is a murder?`,
   hoursSlept: 5,
   dreamType: 'lucid',
-  createdAt: moment(now).subtract(26, 'days')
+  createdAt: moment(now).subtract(26, 'days'),
+  lucidityLevel: 4
 }))
 
 store.dispatch(addDream({
@@ -213,7 +226,8 @@ store.dispatch(addDream({
           to keep it safe. Who stole the money?`,
   hoursSlept: 7,
   dreamType: 'nightmare',
-  createdAt: moment(now).subtract(28, 'days')
+  createdAt: moment(now).subtract(28, 'days'),
+  lucidityLevel: 4
 }))
 
 const jsx = (
