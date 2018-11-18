@@ -159,76 +159,76 @@ store.dispatch(addDream({
   lucidityLevel: 2
 }))
 
-store.dispatch(addDream({
-  title: 'Recorded Last Words',
-  entry: `A man was found on the floor dead with a cassette recorder in one hand and a gun in 
-          the other. When the police arrive at the scene they pressed play on the recorder. It was 
-          the man’s voice. He said, “I have nothing else to live for. I can’t go on,” followed by the 
-          sound of a gunshot. After listening, the police knew that this was a murder, not a suicide. 
-          How?`,
-  hoursSlept: 9,
-  dreamType: 'lucid',
-  createdAt: moment(now).subtract(20, 'days'),
-  lucidityLevel: 3
-}))
+// store.dispatch(addDream({
+//   title: 'Recorded Last Words',
+//   entry: `A man was found on the floor dead with a cassette recorder in one hand and a gun in 
+//           the other. When the police arrive at the scene they pressed play on the recorder. It was 
+//           the man’s voice. He said, “I have nothing else to live for. I can’t go on,” followed by the 
+//           sound of a gunshot. After listening, the police knew that this was a murder, not a suicide. 
+//           How?`,
+//   hoursSlept: 9,
+//   dreamType: 'lucid',
+//   createdAt: moment(now).subtract(20, 'days'),
+//   lucidityLevel: 3
+// }))
 
-store.dispatch(addDream({
-  title: 'Guilty in Court',
-  entry: `A woman was in court for killing her husband. She said she wasn’t guilty and that 
-          she dearly missed him. In the closing statement, the woman’s lawyer stands up and says, 
-          “Her husband was just missing. Everyone look at the doors. He’s going to walk through them 
-          in about 30 seconds.” The entire jury stares at the doors waiting for waiting for this woman’s 
-          husband to walk through the doors. The lawyer and the woman stare at the jury. The lawyer 
-          concludes by saying, “See! If you were so sure she killed her husband, you wouldn’t be watching 
-          that door!” The jury immediately gave a guilty verdict. Why?`,
-  hoursSlept: 10,
-  dreamType: 'nightmare',
-  createdAt: moment(now).subtract(22, 'days'),
-  lucidityLevel: 3
-}))
+// store.dispatch(addDream({
+//   title: 'Guilty in Court',
+//   entry: `A woman was in court for killing her husband. She said she wasn’t guilty and that 
+//           she dearly missed him. In the closing statement, the woman’s lawyer stands up and says, 
+//           “Her husband was just missing. Everyone look at the doors. He’s going to walk through them 
+//           in about 30 seconds.” The entire jury stares at the doors waiting for waiting for this woman’s 
+//           husband to walk through the doors. The lawyer and the woman stare at the jury. The lawyer 
+//           concludes by saying, “See! If you were so sure she killed her husband, you wouldn’t be watching 
+//           that door!” The jury immediately gave a guilty verdict. Why?`,
+//   hoursSlept: 10,
+//   dreamType: 'nightmare',
+//   createdAt: moment(now).subtract(22, 'days'),
+//   lucidityLevel: 3
+// }))
 
-store.dispatch(addDream({
-  title: 'Romantic Journey',
-  entry: `Mr. and Mrs. Clyde went on a trip to the mountains. But 2 days later, Mr. Clyde 
-          returned home alone. He went to the police and said that Mrs. Clyde had fallen to her death. 
-          The next day, Detective Stevens visited Mr. Clyde and arrested him for his wife’s murder. 
-          Clyde confessed his guilt and asked the detective how he’d found out he was the murderer. 
-          Stevens said he’d simply called a travel agent and asked for some information. What did the 
-          travel agent say to the detective?`,
-  hoursSlept: 10,
-  dreamType: 'normal',
-  createdAt: moment(now).subtract(24, 'days'),
-  lucidityLevel: 2
-}))
+// store.dispatch(addDream({
+//   title: 'Romantic Journey',
+//   entry: `Mr. and Mrs. Clyde went on a trip to the mountains. But 2 days later, Mr. Clyde 
+//           returned home alone. He went to the police and said that Mrs. Clyde had fallen to her death. 
+//           The next day, Detective Stevens visited Mr. Clyde and arrested him for his wife’s murder. 
+//           Clyde confessed his guilt and asked the detective how he’d found out he was the murderer. 
+//           Stevens said he’d simply called a travel agent and asked for some information. What did the 
+//           travel agent say to the detective?`,
+//   hoursSlept: 10,
+//   dreamType: 'normal',
+//   createdAt: moment(now).subtract(24, 'days'),
+//   lucidityLevel: 2
+// }))
 
-store.dispatch(addDream({
-  title: 'Climbing Trip',
-  entry: `A couple went on for a climbing trip. But only the husband returned from the 
-          vacation and said that his wife slipped off while climbing and died. On investigating, 
-          the local sheriff arrested him saying, “Your travel agent called. You murdered your wife.” 
-          The man did not inform anyone about the trip. Then how did the agent was so sure that it 
-          is a murder?`,
-  hoursSlept: 5,
-  dreamType: 'lucid',
-  createdAt: moment(now).subtract(26, 'days'),
-  lucidityLevel: 4
-}))
+// store.dispatch(addDream({
+//   title: 'Climbing Trip',
+//   entry: `A couple went on for a climbing trip. But only the husband returned from the 
+//           vacation and said that his wife slipped off while climbing and died. On investigating, 
+//           the local sheriff arrested him saying, “Your travel agent called. You murdered your wife.” 
+//           The man did not inform anyone about the trip. Then how did the agent was so sure that it 
+//           is a murder?`,
+//   hoursSlept: 5,
+//   dreamType: 'lucid',
+//   createdAt: moment(now).subtract(26, 'days'),
+//   lucidityLevel: 4
+// }))
 
-store.dispatch(addDream({
-  title: 'Who Stole the Money',
-  entry: `A man placed a $100 dollar bill on his desk and left for work. When he 
-          returned back the money was gone. He has three suspects: the cook, the maid and 
-          the electrician. The cook said he put the bill under a book on his desk to keep 
-          it safe. The man checked and it is no longer there. The maid said she moved the 
-          bill to the inside of the book between page 1 and 2 while she was cleaning. Again, 
-          the man checked the book and there was nothing between page 1 and 2. The electrician 
-          said he saw the bill sticking out of the book and he moved it between page 2 and 3 
-          to keep it safe. Who stole the money?`,
-  hoursSlept: 7,
-  dreamType: 'nightmare',
-  createdAt: moment(now).subtract(28, 'days'),
-  lucidityLevel: 4
-}))
+// store.dispatch(addDream({
+//   title: 'Who Stole the Money',
+//   entry: `A man placed a $100 dollar bill on his desk and left for work. When he 
+//           returned back the money was gone. He has three suspects: the cook, the maid and 
+//           the electrician. The cook said he put the bill under a book on his desk to keep 
+//           it safe. The man checked and it is no longer there. The maid said she moved the 
+//           bill to the inside of the book between page 1 and 2 while she was cleaning. Again, 
+//           the man checked the book and there was nothing between page 1 and 2. The electrician 
+//           said he saw the bill sticking out of the book and he moved it between page 2 and 3 
+//           to keep it safe. Who stole the money?`,
+//   hoursSlept: 7,
+//   dreamType: 'nightmare',
+//   createdAt: moment(now).subtract(28, 'days'),
+//   lucidityLevel: 4
+// }))
 
 const jsx = (
   <Provider store={store}>

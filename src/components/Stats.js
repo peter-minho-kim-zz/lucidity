@@ -33,7 +33,7 @@ class Stats extends React.Component {
     })
     
     // Calculate rank
-    lucidDreamCount >= 5 ? this.state.rank = 'Dreamwalker' : this.state.rank = 'Stargazer'
+    lucidDreamCount >= 3 ? this.state.rank = 'Dreamwalker' : this.state.rank = 'Stargazer'
     
     // Calculate lucid dream percentage
     this.state.lucidDreamPct = (lucidDreamCount / dreams.length).toFixed(2).toString() + '%' 
