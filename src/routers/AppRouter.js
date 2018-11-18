@@ -5,15 +5,17 @@ import DreamsPage from '../components/DreamsPage'
 import DashboardPage from '../components/DashboardPage'
 import EditDreamPage from '../components/EditDreamPage'
 import Header from '../components/Header'
+import { HomePage } from '../components/HomePage'
 import NotFoundPage from '../components/NotFoundPage'
-import { BrowserRouter, Link, NavLink, Route, Switch } from 'react-router-dom'
+import { BrowserRouter, Route, Switch } from 'react-router-dom'
 
 const AppRouter = () => (
   <BrowserRouter>
     <div>
       <Header />
       <Switch>
-        <Route path="/" component={DashboardPage} exact={true} />
+        <Route path="/" component={HomePage} exact={true} />
+        <Route path="/dashboard" component={DashboardPage} />
         <Route path="/dreams" component={DreamsPage} />
         <Route path="/create" component={AddDreamPage} />
         <Route path="/edit/:id" component={EditDreamPage} />
