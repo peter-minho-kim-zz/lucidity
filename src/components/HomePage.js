@@ -15,7 +15,6 @@ export const HomePage = () => {
             </div>
           </nav>
         </header>
-        
         <div className="section--one__text-box u-center-text">
           <h1 className="heading u-margin-bottom-medium">
             <span className="heading--primary u-margin-bottom-small">experience lucid dreaming</span>
@@ -24,13 +23,15 @@ export const HomePage = () => {
               Transform your dream world into a playground of infinite possibility.
             </span>
           </h1>
-
           <Link to="/dashboard" className="btn btn--blue">get started</Link>
         </div>
-
         <div id="stars1"></div>
         <div id="stars2"></div>
         <div id="stars3"></div>
+      </section>
+
+      <section className="section section--two">
+        <h1>adfgadsf</h1>
       </section>
 
 
