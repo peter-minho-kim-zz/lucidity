@@ -1,0 +1,15 @@
+.heading-text-box {
+  text-transform: uppercase;
+
+  &--secondary {
+    color: $white;
+    font-size: $xl-font-size;
+    font-weight: 500;
+  }
+
+  &--tertiary {
+    color: $light-blue;
+    font-size: $l-font-size;
+    font-weight: 400;
+  }
+}
