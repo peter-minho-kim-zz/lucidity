@@ -1,2 +1,11 @@
-@import './base/settings';
+@import './abstracts/animations';
+@import './abstracts/variables';
+
 @import './base/base';
+@import './base/utilities';
+
+@import './components/button';
+
+@import './layouts/header';
+
+@import './pages/home-page';

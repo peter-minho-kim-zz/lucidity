@@ -3,18 +3,19 @@ import { Link, NavLink } from 'react-router-dom'
 
 const Header = (props) => {
   return (
-    <header>
+    <div>
       {window.location.pathname === '/' ? 
-        <Link to="/dashboard">DEMO</Link>
+        undefined
         : 
-        <div>
+        <header className="header"><nav className="nav nav--in">
           <h1><Link to='/'>Lucidity</Link></h1>
-          <NavLink to="/dashboard" activeClassName="is-active">Dashboard</NavLink>
-          <NavLink to="/dreams" activeClassName="is-active">Dreams</NavLink>
-          <NavLink to="/create" activeClassName="is-active">New Dream</NavLink>
-        </div>
+          <NavLink to="/dashboard" className="nav__link" activeClassName="is-active">Dashboard</NavLink>
+          <NavLink to="/dreams" className="nav__link" activeClassName="is-active">Dreams</NavLink>
+          <NavLink to="/create" className="nav__link" activeClassName="is-active">New Dream</NavLink>
+          </nav>
+        </header>
       }
-    </header>
+    </div>
   )
 }
 

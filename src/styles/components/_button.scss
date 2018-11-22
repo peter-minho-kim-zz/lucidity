@@ -1,0 +1,29 @@
+.btn {
+  border-radius: 3px;
+  display: inline-block;
+  font-size: $l-font-size;
+  padding: .3rem 1.2rem;
+  text-transform: uppercase;
+  transition: color 0.2s ease-in-out;
+
+  &,
+  &:link,
+  &:visited {
+    text-decoration: none;
+  }
+
+  &--blue {
+    background: linear-gradient(to bottom right, $light-blue 0%, $dark-blue 100%);
+    border: 1px solid linear-gradient(to bottom right, $light-blue 0%, $dark-blue 100%);
+
+    &,
+    &:link,
+    &:visited {
+      color: $dark-blue;
+    }
+
+    &:hover {
+      color: white;
+    }
+  }
+}
