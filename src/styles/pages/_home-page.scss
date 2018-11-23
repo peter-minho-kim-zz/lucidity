@@ -66,6 +66,7 @@
 
 .section {
   margin: 0 auto;
+  position: relative;
   width: 114rem;
 }
 
@@ -111,9 +112,10 @@
       top: 45%;
       left: 50%;
     transform: translate(-50%, -50%);
+    width: 100%;
 
     .heading-primary--main {
-      font-size: $xxl-font-size;
+      font-size: $xxxl-font-size;
       text-transform: uppercase;
       background-image: linear-gradient(to bottom right, $light-blue, $light-pink);
       -webkit-background-clip: text;
@@ -137,10 +139,11 @@
     .card {
       background-color: $white;
       border-radius: 3px;
-      height: 30rem;
+      height: 32rem;
+      padding: 1.5rem;
       position: relative;
       text-align: center;
-      width: 30rem;
+      width: 32rem;
 
       .img {
         position: absolute;
@@ -149,18 +152,18 @@
       }
 
       &--1-img {      
-          top: -9rem;          
-        width: 14rem;
+          top: -5rem;          
+        width: 13rem;
       }
 
       &--2-img {      
-          top: -9rem;          
-        width: 14rem;
+          top: -5rem;          
+        width: 13rem;
       }
 
       &--3-img {      
-          top: -6rem;          
-        width: 19rem;
+          top: -3rem;          
+        width: 18rem;
       }
 
       &__text-box {
@@ -168,6 +171,7 @@
           top: 70%;
           left: 50%;
         transform: translate(-50%, -50%);
+        width: 90%;
       }
 
       &__main-text {
@@ -180,7 +184,6 @@
         color: $gray;
         font-size: $default-font-size;
         font-weight: 400;
-        width: 20rem;
       }
     }
   }

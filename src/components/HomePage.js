@@ -31,23 +31,31 @@ export const HomePage = () => {
       </section>
 
       <section className="section section--two">
-        <div className="heading-text-box u-center-text u-margin-bottom-xl">
+        <div className="heading-text-box u-center-text u-margin-bottom-big">
           <h3 className="heading-text-box--tertiary">an entirely better way to dream</h3>
-          <h2 className="heading-text-box--secondary">something something something</h2>
+          <h2 className="heading-text-box--secondary">Take control of your subconscious mind</h2>
         </div>
         <div className="section--two__cards">
           <div className="card card--1">
             <img src="../images/easy-to-use.png" alt="Easy to use" className="img card--1-img" />
             <div className="card__text-box">
-              <p className="card__main-text">Easy to Use</p>
-              <p className="card__sub-text">Lucidity makes it easy to track your progress and record your dreams</p>
-            </div>
+              <p className="card__main-text u-margin-bottom-small">Easy to Use</p>
+              <p className="card__sub-text">Lucidity makes it easy to record your dreams and track your progress</p>
+              </div>
           </div>
           <div className="card card--2">
             <img src="../images/learn-about-yourself.png" alt="Learn about yourself" className="img card--2-img" />
+            <div className="card__text-box">
+              <p className="card__main-text u-margin-bottom-small">Rewarded Experience</p>
+              <p className="card__sub-text">Understand your subconscious mind better than ever before</p>
+            </div>
           </div>
           <div className="card card--3">
             <img src="../images/confidential.png" alt="Confidential" className="img card--3-img" />
+            <div className="card__text-box">
+              <p className="card__main-text u-margin-bottom-small">Dream Security</p>
+              <p className="card__sub-text">Rest assured knowing that your records are kept confidential</p>
+            </div>
           </div>
         </div>
       </section>
