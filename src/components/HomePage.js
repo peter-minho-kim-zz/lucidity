@@ -26,16 +26,16 @@ export const HomePage = () => {
               Transform your dream world into a playground of infinite possibility.
             </span>
           </h1>
-          <Link to="/dashboard" className="btn btn--blue">get started</Link>
+          <Link to="/dashboard" className="btn btn--blue">lucidity demo</Link>
         </div>
       </section>
 
-      <section className="section section--two">
+      <section className="section section--two u-margin-bottom-xxxl">
         <div className="heading-text-box u-center-text u-margin-bottom-big">
           <h3 className="heading-text-box--tertiary">an entirely better way to dream</h3>
           <h2 className="heading-text-box--secondary">Take control of your subconscious mind</h2>
         </div>
-        <div className="section--two__cards">
+        <div className="section--two__cards u-margin-bottom-medium">
           <div className="card card--1">
             <img src="../images/easy-to-use.png" alt="Easy to use" className="img card--1-img" />
             <div className="card__text-box">
@@ -58,8 +58,16 @@ export const HomePage = () => {
             </div>
           </div>
         </div>
+        <a href="#" className="btn btn--blue">get started</a>
       </section>
 
+      <section className="section section--three">
+        <div className="heading-text-box u-center-text u-margin-bottom-big">
+          <h3 className="heading-text-box--tertiary">how it works</h3>
+          <h2 className="heading-text-box--secondary">how we dream</h2>
+        </div>
+        
+      </section>
 
     </div>
   )

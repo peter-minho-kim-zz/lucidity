@@ -130,6 +130,7 @@
 }
 
 .section--two {
+  text-align: center;
 
   &__cards {
     display: flex;
@@ -143,7 +144,12 @@
       padding: 1.5rem;
       position: relative;
       text-align: center;
+      transition: all 0.4s;
       width: 32rem;
+
+      &:hover {
+        transform: translateY(-3rem);
+      }
 
       .img {
         position: absolute;
