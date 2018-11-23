@@ -1,0 +1,26 @@
+.header {
+  background-color: $transparent-black;
+  width: 100%;
+
+  .nav {
+    display: flex;
+    font-size: $default-font-size;
+    justify-content: space-between;
+    margin: 0 auto;
+    padding: .8rem 0;
+    width: 114rem;
+
+    &__link {
+      &,
+      &:link,
+      &:visited {
+        color: $white;
+        text-decoration: none;
+      }
+    }
+
+    .is-active {
+      color: $light-blue;
+    }
+  }
+}

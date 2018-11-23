@@ -3,15 +3,17 @@ import { Link, NavLink } from 'react-router-dom'
 
 const Header = (props) => {
   return (
-    <div>
+    <div className="header-wrapper">
       {window.location.pathname === '/' ? 
         undefined
         : 
-        <header className="header"><nav className="nav nav--in">
-          <h1><Link to='/'>Lucidity</Link></h1>
-          <NavLink to="/dashboard" className="nav__link" activeClassName="is-active">Dashboard</NavLink>
-          <NavLink to="/dreams" className="nav__link" activeClassName="is-active">Dreams</NavLink>
-          <NavLink to="/create" className="nav__link" activeClassName="is-active">New Dream</NavLink>
+        <header className="header">
+          <nav className="nav">
+            <NavLink to="/" className="nav__link">Lucidity</NavLink>
+            <NavLink to="/dashboard" className="nav__link" activeClassName="is-active">Dashboard</NavLink>
+            <NavLink to="/dreams" className="nav__link" activeClassName="is-active">Dreams</NavLink>
+            <NavLink to="/create" className="nav__link" activeClassName="is-active">New Dream</NavLink>
+            <NavLink to="#" className="nav__link" activeClassName="is-active">?</NavLink>
           </nav>
         </header>
       }

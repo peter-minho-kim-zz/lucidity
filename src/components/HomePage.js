@@ -68,7 +68,6 @@ export const HomePage = () => {
         </div>
         
       </section>
-
     </div>
   )
 }
