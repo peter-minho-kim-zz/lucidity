@@ -1,0 +1,35 @@
+.dream-list-filters {
+  & > *:not(:last-child) {
+    margin-right: 3rem;
+  }
+  .text-filter {
+    background-color: transparent;
+    border: 2px solid transparent;
+    color: white;
+    font-size: $l-font-size;
+    font-family: inherit;
+    height: 4.8rem;
+    padding: 0 1.5rem;
+    transition: all .3s;
+    width: 14.6rem;
+
+    &:focus {
+      border-bottom: 2px solid $light-blue;
+      outline: none;
+    }
+  }
+
+  .select {
+    background-color: transparent;
+    border: 2px solid transparent;
+    border-radius: 0;
+    color: $white;
+    font-size: $l-font-size;
+    height: 4.8rem;
+
+    &:focus {
+      border-bottom: 2px solid $light-blue;
+      outline: none;
+    }
+  }
+}

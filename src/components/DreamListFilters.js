@@ -26,15 +26,18 @@ export class DreamListFilters extends React.Component {
   }
   render() {
     return (
-      <div>
+      <div className="dream-list-filters">
         <input
           type="text"
           value={this.props.filters.text}
           onChange={this.onTextChange}
+          className="text-filter"
+          placeholder="Title search"
         />
         <select
           value={this.props.filters.sortBy}
           onChange={this.onSortChange}
+          className="select"
         >
           <option value="date">Date</option>
           <option value="hoursSlept">Hours Slept</option>
@@ -51,8 +54,8 @@ export class DreamListFilters extends React.Component {
             } else if (e.target.value === 'nightmare') {
               this.props.setDreamFilter('nightmare')
             }
-
           }}
+          className="select"
         >
           <option value="all">All</option>
           <option value="normal">Normal</option>

@@ -40,7 +40,7 @@ class Stats extends React.Component {
   }
   render() {
     return (
-      <div className="stat-cards-wrapper u-top-padding-l">
+      <div className="stat-cards-wrapper">
         <div className="stat-cards-wrapper__vertical u-margin-bottom-medium">
           <div className="stat-card stat-card--vertical">
             <img src="./images/lucid-pct.png" alt="lucid dream percentage" className="stat-card__img"/>
