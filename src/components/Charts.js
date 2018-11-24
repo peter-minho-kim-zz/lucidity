@@ -114,7 +114,7 @@ class Charts extends React.Component {
   }
   render() {
     return (
-      <div className="charts-container">
+      <div className="charts-container u-margin-bottom-big">
         <div className="chart chart--line-container">
           <Line
             data={this.state.sleepTimeChartData}

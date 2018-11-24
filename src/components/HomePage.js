@@ -53,7 +53,6 @@ export const HomePage = () => {
           <h3 className="heading-text-box--tertiary">how it works</h3>
           <h2 className="heading-text-box--secondary">how we dream</h2>
         </div>
-        
       </section>
     </div>
   )
