@@ -14,7 +14,6 @@
 
   &--blue {
     background: linear-gradient(to bottom right, $light-blue 0%, $dark-blue 100%);
-    border: 1px solid linear-gradient(to bottom right, $light-blue 0%, $dark-blue 100%);
 
     &,
     &:link,

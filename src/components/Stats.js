@@ -43,33 +43,45 @@ class Stats extends React.Component {
       <div className="stat-cards-wrapper u-top-padding-l">
         <div className="stat-cards-wrapper__vertical u-margin-bottom-medium">
           <div className="stat-card stat-card--vertical">
-            <img src="./images/dreamwalker-rank.png" alt="Dreamwalker rank" className="stat-card__img-1" />
-            <div className="stat-card__text-box">
+            <img src="./images/lucid-pct.png" alt="lucid dream percentage" className="stat-card__img"/>
+            <div className="stat-card--vertical__text-box">
               <p className="stat-card__stat">{this.state.lucidDreamPct}</p>
               <p className="stat-card__title">lucid dream percentage</p>
             </div>
           </div>
           <div className="stat-card stat-card--vertical">
-          <img src="./images/dreamwalker-rank.png" alt="Dreamwalker rank" className="stat-card__img-1"/>
-            <div className="stat-card__text-box">
+            <img src="./images/current-rank.png" alt="current rank" className="stat-card__img" />
+            <div className="stat-card--vertical__text-box">
               <p className="stat-card__stat">{this.state.rank}</p>    
               <p className="stat-card__title">current rank</p>   
             </div>
           </div>
           <div className="stat-card stat-card--vertical">
-            <img src="./images/dreamwalker-rank.png" alt="Dreamwalker rank" className="stat-card__img-1" />
-            <div className="stat-card__text-box">
+            <img src="./images/total-entries.png" alt="total entries" className="stat-card__img" />
+            <div className="stat-card--vertical__text-box">
               <p className="stat-card__stat">{this.state.totalEntries}</p>
               <p className="stat-card__title">total entries</p>
             </div>
           </div>
         </div>
         <div className="stat-cards-wrapper__horizontal u-margin-bottom-medium">
-          <div className="stat-card stat-card--horizontal">
-            <p>AVERAGE SLEEP HOURS: {this.state.avgSleepTime}</p>
+          <div className="stat-card stat-card--horizontal">          
+            <div className="stat-card--horizontal__text-box">
+              <p className="stat-card__stat">{this.state.avgSleepTime} hours</p>
+              <p className="stat-card__title">average sleep time</p>
+            </div>
+            <div className="stat-card__img-container">
+              <img src="./images/avg-sleep.png" alt="average sleep" className="stat-card__img stat-card__img--horizontal" />
+            </div>
           </div>
           <div className="stat-card stat-card--horizontal">
-            <p>AVERAGE LUCIDITY LEVEL: {this.state.avgLucidityLevel}</p>
+            <div className="stat-card--horizontal__text-box">
+              <p className="stat-card__stat">{this.state.avgLucidityLevel}</p>
+              <p className="stat-card__title">average lucidity</p>
+            </div>
+            <div className="stat-card__img-container">
+              <img src="./images/avg-lucidity.png" alt="average lucidity" className="stat-card__img stat-card__img--horizontal" />
+            </div>
           </div>
         </div>
       </div>

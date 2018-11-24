@@ -28,8 +28,12 @@
     }
 
     &__main-links {
+      position: absolute;
+        left: 50%;
+      transform: translateX(-50%);
+
       .nav__link {
-        margin-right: 3rem;
+        margin: 0 2.5rem;
       }
     }
 

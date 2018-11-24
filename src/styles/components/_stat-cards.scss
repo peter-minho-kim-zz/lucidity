@@ -2,48 +2,64 @@
   margin: 0 auto;
   width: $grid-width;
 
-  &__vertical, &__horizontal {
+  &__vertical {
     display: flex;
     justify-content: space-between;
+  }
+
+  &__horizontal {
+    display: flex;
+    justify-content: center;
   }
 }
 
 .stat-card {
-  background-color: $white;
-  border-radius: 3px;
+  // background-color: $gray;
+  // border: 1px solid;
+  // border-image: linear-gradient(to bottom right, $light-blue 0%, $light-pink 100%);
+  // border-image-slice: 1;
+  // border-radius: 3px;
   font-size: $default-font-size;
-  padding: 1rem 2rem;
+  padding: 3rem;
   position: relative;
   text-transform: uppercase;
 
-  &--vertical {
-    text-align: center;
-    height: 30rem;
-    width: 30rem;
-  }
-
-  &--horizontal {
-    width: 50rem;
-  }
-
-  &__text-box {
-    position: absolute;
-      top: 85%;
-      left: 50%;
-    transform: translate(-50%, -50%);
-    width: 100%;
-  }
-
-  &__img-1{
-    height: 23rem;
-  }
-
   &__stat {
-    color: $dark-purple;
-    font-size: $l-font-size;
+    color: $white;
+    font-size: $xl-font-size;
+    font-weight: 500;
   }
 
   &__title {
-    color: $gray;
+    color: $light-gray;
+  }
+
+  &__img {
+    width: 5rem;
+  }
+
+  &__img--horizontal {
+    position: absolute;
+      top: 50%;
+    transform: translateY(-50%);
+  }
+
+  &--vertical {
+    text-align: center;
+    width: 30rem;
+
+    &__text-box {
+      width: 100%;
+    }
+  }
+
+  &--horizontal {
+    display: flex;
+    justify-content: center;
+    width: 31rem;
+
+    &__text-box {
+      margin-right: 1.5rem;
+    }
   }
 }
