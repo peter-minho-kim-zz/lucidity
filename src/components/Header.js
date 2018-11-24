@@ -5,7 +5,15 @@ const Header = (props) => {
   return (
     <div className="header-wrapper">
       {window.location.pathname === '/' ? 
-        undefined
+        <header className="header">
+          <nav className="nav">
+            <NavLink to="/" className="nav__link">Lucidity</NavLink>
+            <div className="nav__home-links">
+              <NavLink to="/dashboard" className="nav__link" activeClassName="is-active">Sign Up</NavLink>
+              <NavLink to="/dashboard" className="nav__link" activeClassName="is-active">Demo</NavLink>
+            </div>
+          </nav>
+        </header>
         : 
         <header className="header">
           <nav className="nav">

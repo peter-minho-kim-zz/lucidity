@@ -4,20 +4,7 @@ import { Link } from 'react-router-dom'
 export const HomePage = () => {
   return (
     <div className="home-page-wrapper">
-      <div id="stars1"></div>
-      <div id="stars2"></div>
-      <div id="stars3"></div>
-
       <section className="section section--one">
-        <header className="section--one__header">
-          <nav className="section--one__nav">
-            <Link to="/" className="link">Lucidity</Link>
-            <div className="nav__right">
-              <Link to="/" className="link">Sign Up</Link>
-              <Link to="/dashboard" className="link">Demo</Link>
-            </div>
-          </nav>
-        </header>
         <div className="section--one__text-box u-center-text">
           <h1 className="heading-primary u-margin-bottom-medium">
             <span className="heading-primary--main u-margin-bottom-small">experience lucid dreaming</span>

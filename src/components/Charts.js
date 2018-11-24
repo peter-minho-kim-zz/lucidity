@@ -13,18 +13,18 @@ class Charts extends React.Component {
           {
             label: 'Hours Slept',
             fill: false,
-            lineTension: 0.1,
-            backgroundColor: 'rgba(75, 192, 192, 0.4)',
-            borderColor: 'rgba(75, 192, 192, 1)',
+            lineTension: 0.3,
+            backgroundColor: '#53D1FE',
+            borderColor: '#53D1FE',
             borderCapStyles: 'butt',
             borderDash: [],
             borderDashOffset: 0.0,
             borderJoinStyle: 'miter',
-            pointBorderColor: 'rgba(75, 192, 192, 1)',
+            pointBorderColor: '#53D1FE',
             pointBackgroundColor: '#fff',
             pointBorderWidth: 1,
             pointHoverRadius: 5,
-            pointHoverBackgroundColor: 'rgba(75, 192, 192, 1)',
+            pointHoverBackgroundColor: '#53D1FE',
             pointHoverBorderColor: 'rgba(220, 220, 220, 1)',
             pointHoverBorderWidth: 2,
             pointRadius: 1,
@@ -34,16 +34,32 @@ class Charts extends React.Component {
         ]
       },
       sleepTimeChartOptions: {
+        animation: {
+          duration: 2500,
+          easing: 'easeOutCubic'
+        },
+        legend: {
+          labels: {
+            fontColor: 'white',
+            fontFamily: "'Montserrat', sans-serif",
+            fontSize: 14,
+            padding: 25
+          }
+        },
         scales: {
           yAxes: [{
             ticks: {
-              beginAtZero: true
+              beginAtZero: true,
+              fontColor: '#fff'
             },
             gridLines: {
-              color: 'red'
+              color: '#7C7C7C'
             }
           }],
           xAxes: [{
+            ticks: {
+              fontColor: '#fff'
+            },
             gridLines: {
               display: false
             }
@@ -55,14 +71,27 @@ class Charts extends React.Component {
         datasets: [
           {
             label: 'Dream Types',
-            backgroundColor: ['#f1c40f', '#e67e22', '#16a085'],
-            borderWidth: [7, 7, 7],
+            backgroundColor: ['#53D1FE', '#191992', '#4332B8'],
+            borderWidth: [2, 2, 2],
             data: []
           }
         ]
       },
       dreamTypeChartOptions: {
+        animation: {
+          duration: 2500,
+          easing: 'easeOutCubic'
+        },
         cutoutPercentage: 75,
+        legend: {
+          labels: {
+            fontColor: 'white',
+            fontFamily: "'Montserrat', sans-serif",
+            fontSize: 14,
+            padding: 25
+          },
+          position: 'right'
+        },
         rotation: Math.PI * Math.random()
       },
       dreamTypeChartTotals: {
@@ -85,15 +114,19 @@ class Charts extends React.Component {
   }
   render() {
     return (
-      <div>
-        <Line
-          data={this.state.sleepTimeChartData}
-          options={this.state.sleepTimeChartOptions}
-        />
-        <Doughnut 
-          data={this.state.dreamTypeChartData}
-          options={this.state.dreamTypeChartOptions}
-        />
+      <div className="charts-container">
+        <div className="chart chart--line-container">
+          <Line
+            data={this.state.sleepTimeChartData}
+            options={this.state.sleepTimeChartOptions}
+          />
+        </div>
+        <div className="chart chart--doughnut-container">
+          <Doughnut
+            data={this.state.dreamTypeChartData}
+            options={this.state.dreamTypeChartOptions}
+          />
+        </div>
       </div>
     )
   }

@@ -1,0 +1,14 @@
+.charts-container {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  width: $grid-width;
+}
+
+.chart--doughnut-container {
+  width: 50%;
+}
+
+.chart--line-container {
+  width: 50%;
+}

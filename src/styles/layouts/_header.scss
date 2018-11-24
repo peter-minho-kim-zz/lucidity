@@ -2,6 +2,7 @@
   background-color: transparent;
   position: absolute;
   width: 100%;
+  z-index: 10;
 
   .nav {
     display: flex;
@@ -24,6 +25,13 @@
 
       &:hover {
         color: $light-blue;
+      }
+    }
+
+    &__home-links {
+
+      .nav__link:not(:last-child) {
+        margin-right: 2.5rem;
       }
     }
 

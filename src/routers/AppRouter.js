@@ -11,7 +11,10 @@ import { BrowserRouter, Route, Switch } from 'react-router-dom'
 
 const AppRouter = () => (
   <BrowserRouter>
-    <div>
+    <div className="main-wrapper">
+      <div id="stars1"></div>
+      <div id="stars2"></div>
+      <div id="stars3"></div>
       <Header />
       <Switch>
         <Route path="/" component={HomePage} exact={true} />
