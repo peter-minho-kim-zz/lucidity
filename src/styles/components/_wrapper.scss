@@ -1,10 +1,10 @@
 .main-wrapper {
   background: radial-gradient(ellipse at bottom, $dark-blue 0%, $dark-purple 100%);
-  padding-bottom: 5rem;
   overflow: hidden;
 }
 
 .wrapper {
+  height: 100vh;
   padding-top: 13rem;
   margin: 0 auto;
   width: $grid-width;
