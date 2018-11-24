@@ -4,32 +4,67 @@
   }
   .text-filter {
     background-color: transparent;
-    border: 2px solid transparent;
-    color: white;
-    font-size: $l-font-size;
+    border: 1px solid $light-gray;
+    border-radius: $input-radius;
+    color: $light-gray;
+    font-size: $m-font-size;
     font-family: inherit;
     height: 4.8rem;
     padding: 0 1.5rem;
-    transition: all .3s;
+    transition: all .4s;
     width: $input-width;
 
     &:focus {
-      border-bottom: 2px solid $light-blue;
+      background-color: rgba($light-blue, .1);
+      border-color: $light-blue;
+      color: $light-blue;
       outline: none;
+
+      &::placeholder {
+        color: $light-blue;
+        opacity: 1
+      }
+
+      &:-ms-input-placeholder { /* Internet Explorer 10-11 */
+        color: $light-gray;
+      }
+
+      &::-ms-input-placeholder { /* Microsoft Edge */
+        color: $light-gray;
+      }
+    }
+
+    &::placeholder {
+      color: $light-gray;
+      opacity: 1
+    }
+
+    &:-ms-input-placeholder { /* Internet Explorer 10-11 */
+      color: $light-gray;
+    }
+
+    &::-ms-input-placeholder { /* Microsoft Edge */
+      color: $light-gray;
     }
   }
 
   .select {
     background-color: transparent;
-    border: 2px solid $gray;
-    border-radius: 0;
-    color: $white;
-    font-size: $l-font-size;
+    border: 1px solid $light-gray;
+    -webkit-appearance: none;
+    -webkit-border-radius: $input-radius;
+    color: $light-gray;
+    cursor: pointer;
+    font-size: $m-font-size;
     height: 4.8rem;
+    padding: 0 1.5rem;
+    transition: all .4s;
     width: $input-width;
 
     &:focus {
-      border-bottom: 2px solid $light-blue;
+      background-color: rgba($light-blue, .1);
+      border-color: $light-blue;
+      color: $light-blue;
       outline: none;
     }
   }

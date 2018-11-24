@@ -32,7 +32,7 @@ export class DreamListFilters extends React.Component {
           value={this.props.filters.text}
           onChange={this.onTextChange}
           className="text-filter"
-          placeholder="Title search"
+          placeholder="Search dreams"
         />
         <select
           value={this.props.filters.sortBy}
@@ -57,7 +57,7 @@ export class DreamListFilters extends React.Component {
           }}
           className="select"
         >
-          <option value="all">All</option>
+          <option value="all">All Dreams</option>
           <option value="normal">Normal</option>
           <option value="lucid">Lucid</option>
           <option value="nightmare">Nightmare</option>
