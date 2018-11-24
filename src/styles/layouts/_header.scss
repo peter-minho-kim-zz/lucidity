@@ -1,5 +1,6 @@
 .header {
-  background-color: $transparent-black;
+  background-color: transparent;
+  position: absolute;
   width: 100%;
 
   .nav {
@@ -7,19 +8,33 @@
     font-size: $default-font-size;
     justify-content: space-between;
     margin: 0 auto;
-    padding: .8rem 0;
+    padding: 1.3rem 0;
     width: 114rem;
 
     &__link {
       &,
       &:link,
       &:visited {
+        border-bottom: 1px solid transparent;
         color: $white;
+        padding-bottom: .5rem;
         text-decoration: none;
+        transition: all .2s;
+      }
+
+      &:hover {
+        color: $light-blue;
+      }
+    }
+
+    &__main-links {
+      .nav__link {
+        margin-right: 3rem;
       }
     }
 
     .is-active {
+      border-color: $light-blue;
       color: $light-blue;
     }
   }

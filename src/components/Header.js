@@ -10,9 +10,11 @@ const Header = (props) => {
         <header className="header">
           <nav className="nav">
             <NavLink to="/" className="nav__link">Lucidity</NavLink>
-            <NavLink to="/dashboard" className="nav__link" activeClassName="is-active">Dashboard</NavLink>
-            <NavLink to="/dreams" className="nav__link" activeClassName="is-active">Dreams</NavLink>
-            <NavLink to="/create" className="nav__link" activeClassName="is-active">New Dream</NavLink>
+            <div className="nav__main-links">
+              <NavLink to="/dashboard" className="nav__link" activeClassName="is-active">Dashboard</NavLink>
+              <NavLink to="/dreams" className="nav__link" activeClassName="is-active">Dreams</NavLink>
+              <NavLink to="/create" className="nav__link" activeClassName="is-active">New Dream</NavLink>
+            </div>
             <NavLink to="#" className="nav__link" activeClassName="is-active">?</NavLink>
           </nav>
         </header>

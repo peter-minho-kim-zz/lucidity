@@ -1,0 +1,49 @@
+.stat-cards-wrapper {
+  margin: 0 auto;
+  width: $grid-width;
+
+  &__vertical, &__horizontal {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.stat-card {
+  background-color: $white;
+  border-radius: 3px;
+  font-size: $default-font-size;
+  padding: 1rem 2rem;
+  position: relative;
+  text-transform: uppercase;
+
+  &--vertical {
+    text-align: center;
+    height: 30rem;
+    width: 30rem;
+  }
+
+  &--horizontal {
+    width: 50rem;
+  }
+
+  &__text-box {
+    position: absolute;
+      top: 85%;
+      left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+  }
+
+  &__img-1{
+    height: 23rem;
+  }
+
+  &__stat {
+    color: $dark-purple;
+    font-size: $l-font-size;
+  }
+
+  &__title {
+    color: $gray;
+  }
+}
