@@ -10,10 +10,12 @@ class DreamListItem extends React.Component {
     this.openDream = this.openDream.bind(this)
   }
   onRemove = () => {
-    console.log(this.props.removeDream(this.props))
-    // this.props.removeDream(this.props.id)
-    // this.props.removeDream(this.props.id)
-    // this.props.history.push('/dreams')
+    this.refs.dream.classList.add('disappear')
+
+    setTimeout(() => {
+      this.props.removeDream(this.props)
+    }, 400)
+
   }
   openDream() {
     const dreamBody = this.refs.dreamBody
@@ -22,7 +24,7 @@ class DreamListItem extends React.Component {
   }
   render() {
     return (
-      <div className="dream" onClick={this.openDream}>
+      <div className="dream" onClick={this.openDream} ref="dream">
         <div className="dream__header">
           <div className="dream__title-box">
             <span className="dream__title">{this.props.title}</span>
