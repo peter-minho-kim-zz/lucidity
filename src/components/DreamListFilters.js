@@ -26,7 +26,7 @@ export class DreamListFilters extends React.Component {
   }
   render() {
     return (
-      <div className="dream-list-filters">
+      <div className="dream-list-filters u-margin-bottom-medium ">
         <input
           type="text"
           value={this.props.filters.text}

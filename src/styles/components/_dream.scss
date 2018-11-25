@@ -2,15 +2,32 @@
   color: $light-gray;
   font-size: 18px;
 
+  &:not(:last-child) {
+    margin-bottom: 2rem;
+  }
+
   &__header {
     background-color: yellow;
+    border-radius: 5px;
     cursor: pointer;
+    padding: 1.5rem 2rem;
   }
 
   &__body {
     background-color: green;
     max-height: 0;
     overflow: hidden;
+    // padding: 0 2rem;
+    position: relative;
     transition: all .4s ease-in-out;
+  }
+
+  &__entry {
+    padding: 2rem 4rem;
+  }
+
+  &__quote {
+    position: absolute;
+      left: 1.2rem;
   }
 }

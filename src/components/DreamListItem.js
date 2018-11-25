@@ -23,7 +23,7 @@ class DreamListItem extends React.Component {
           <span className="dream__date">{moment(this.props.createdAt).format('MMM Do, YYYY')}</span>
         </div>
         <div className="dream__body" ref="dreamBody">
-          <p className="dream__entry">{this.props.entry}</p>
+          <p className="dream__entry"><i class="fas fa-quote-left dream__quote"></i>{this.props.entry}</p>
         </div>
 
             {/*<Link to={`/edit/${id}`} className="dream__link">
