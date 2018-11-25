@@ -3,7 +3,7 @@ import { connect } from 'react-redux'
 import DreamForm from './DreamForm'
 import { editDream, removeDream } from '../actions/dreams'
 
-export class EditDreamPage extends React.Component {
+class EditDreamPage extends React.Component {
   onSubmit = (dream) => {
     this.props.editDream(this.props.dream.id, dream)
     this.props.history.push('/dreams')

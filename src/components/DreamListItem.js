@@ -1,4 +1,5 @@
 import React from 'react'
+import { connect } from 'react-redux'
 import { removeDream } from '../actions/dreams'
 import { Link } from 'react-router-dom'
 import moment from 'moment'
@@ -7,6 +8,12 @@ class DreamListItem extends React.Component {
   constructor(props) {
     super(props)
     this.openDream = this.openDream.bind(this)
+  }
+  onRemove = () => {
+    console.log(this.props.removeDream(this.props))
+    // this.props.removeDream(this.props.id)
+    // this.props.removeDream(this.props.id)
+    // this.props.history.push('/dreams')
   }
   openDream() {
     const dreamBody = this.refs.dreamBody
@@ -52,8 +59,8 @@ class DreamListItem extends React.Component {
           <div className="dream__options">
             <Link to={`/edit/${this.props.id}`} className="dream__link">
               <i className="fas fa-pencil-alt dream__edit"></i>
-              <i className="fas fa-times-circle dream__delete"></i>
             </Link>
+            <i className="fas fa-times-circle dream__delete" onClick={this.onRemove}></i>
           </div>
         </div>
       </div>
@@ -61,21 +68,14 @@ class DreamListItem extends React.Component {
   }
 }
 
-// const DreamListItem = ({ id, title, entry, dreamType, createdAt, hoursSlept }) => (
-//   <div className="dream">
-//     <div className="dream__header">
-//       <span className="dream__title">{title}</span>
-//       <span className="dream__type">{dreamType}</span>
-//       <span className="dream__hours">{hoursSlept}</span>
-//       <span className="dream__date">{moment(createdAt).format('MMM Do, YYYY')}</span>
-//     </div>
-//     <div className="dream__body">
-//       <p className="dream__entry">{entry}</p>
-//     </div>
+const mapDispatchToProps = (dispatch, props) => ({
+  removeDream: (dream) => dispatch(removeDream(dream))
+})
 
-//     {/*<Link to={`/edit/${id}`} className="dream__link">
-// </Link>*/}
-//   </div>
-// )
+const mapStateToProps = (state, props) => ({
 
-export default DreamListItem
+})
+
+
+// export default DreamListItem
+export default connect(mapStateToProps, mapDispatchToProps)(DreamListItem)
