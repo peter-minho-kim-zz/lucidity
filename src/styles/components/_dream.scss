@@ -1,23 +1,50 @@
 .dream {
-  color: $light-gray;
-  font-size: 18px;
+  background: linear-gradient(to bottom right, $light-blue 0%, $dark-blue 100%);
+  border-radius: $input-radius;
+  color: $white;
+  cursor: pointer;
+  font-size: $default-font-size;
+  margin-bottom: 2rem;
+  padding: 1.5rem 2rem;
+  transition: all .4s ease-in-out;
 
-  &:not(:last-child) {
-    margin-bottom: 2rem;
+  &:hover {
+    transform: scale(1.04);
   }
 
   &__header {
-    background-color: yellow;
-    border-radius: 5px;
-    cursor: pointer;
-    padding: 1.5rem 2rem;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__title {
+    font-weight: 600;
+  }
+
+  &__type {
+    padding: 4px 12px;
+    background: linear-gradient(to bottom, lighten($light-purple, 30%) 0%, darken($light-purple, 15%) 100%);
+    border-radius: 10px;
+  }
+
+  &__clock,
+  &__calendar,
+  &__level {
+    margin-right: $icon-space;
+  }
+
+  &__info-container {
+    display: flex;
+    width: 55rem;
+  }
+
+  &__info-container > div {
+    width: 13.5rem;
   }
 
   &__body {
-    background-color: green;
     max-height: 0;
     overflow: hidden;
-    // padding: 0 2rem;
     position: relative;
     transition: all .4s ease-in-out;
   }
@@ -29,5 +56,13 @@
   &__quote {
     position: absolute;
       left: 1.2rem;
+  }
+
+  &__edit {
+    border: 1px solid $light-gray;
+    border-radius: 50%;
+    // background-color: $light-gray;
+    color: $white;
+    padding: 1rem;
   }
 }
