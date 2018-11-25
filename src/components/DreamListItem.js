@@ -52,12 +52,10 @@ class DreamListItem extends React.Component {
           <div className="dream__options">
             <Link to={`/edit/${this.props.id}`} className="dream__link">
               <i className="fas fa-pencil-alt dream__edit"></i>
+              <i className="fas fa-times-circle dream__delete"></i>
             </Link>
           </div>
         </div>
-
-            {/*<Link to={`/edit/${id}`} className="dream__link">
-              </Link>*/}
       </div>
     )
   }

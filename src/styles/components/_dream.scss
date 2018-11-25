@@ -58,11 +58,33 @@
       left: 1.2rem;
   }
 
-  &__edit {
-    border: 1px solid $light-gray;
+  &__options {
+    text-align: right;
+  }
+
+  &__edit-text {
+    color: $white;
+    // display: none;
+    transition: all .2s;
+  }
+
+  &__edit, &__delete {
+    border: 1px solid transparent;
     border-radius: 50%;
-    // background-color: $light-gray;
     color: $white;
     padding: 1rem;
+    transition: all .2s;
+  }
+
+  &__edit:hover {
+    background-color: darken($light-blue, 25%);
+    border-color: $white;
+    transform: rotate(-90deg);
+  }
+
+  &__delete:hover {
+    background-color: lighten($light-purple, 10%);
+    border-color: $white;
+    transform: rotate(90deg);
   }
 }
