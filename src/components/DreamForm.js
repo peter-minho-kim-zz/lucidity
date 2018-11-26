@@ -16,7 +16,7 @@ class DreamForm extends React.Component {
       calendarFocused: false,
       error: '',
       buttonText: '',
-      imgUrl: './images/avg-sleep.png'
+      imgUrl: './images/lucidity-level-0.png'
     }
   }
   onTitleChange = (e) => {
@@ -48,32 +48,32 @@ class DreamForm extends React.Component {
 
     lucidityLevel === '0' ? this.setState(() => {
       return {
-        imgUrl: './images/avg-sleep.png'
+        imgUrl: './images/lucidity-level-0.png'
       }
     }) :
     lucidityLevel === '1' ? this.setState(() => {
       return {
-        imgUrl: './images/avg-lucidity.png'
+        imgUrl: './images/lucidity-level-1.png'
       }
     }) :
     lucidityLevel === '2' ? this.setState(() => {
       return {
-        imgUrl: './images/avg-sleep.png'
+        imgUrl: './images/lucidity-level-2.png'
       }
     }) :
     lucidityLevel === '3' ? this.setState(() => {
       return {
-        imgUrl: './images/avg-lucidity.png'
+        imgUrl: './images/lucidity-level-3.png'
       }
     }) :
     lucidityLevel === '4' ? this.setState(() => {
       return {
-        imgUrl: './images/avg-sleep.png'
+        imgUrl: './images/lucidity-level-4.png'
       }
     }) :
     this.setState(() => {
       return {
-        imgUrl: './images/avg-lucidity.png'
+        imgUrl: './images/lucidity-level-5.png'
       }
     }) 
   }
