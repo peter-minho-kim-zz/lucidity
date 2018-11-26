@@ -7,20 +7,28 @@ import moment from 'moment'
 class DreamListItem extends React.Component {
   constructor(props) {
     super(props)
-    this.openDream = this.openDream.bind(this)
   }
   onRemove = () => {
     this.refs.dream.classList.add('disappear')
-
     setTimeout(() => {
       this.props.removeDream(this.props)
     }, 400)
-
   }
-  openDream() {
+  openDream = () => {
     const dreamBody = this.refs.dreamBody
     dreamBody.style.maxHeight ? 
       dreamBody.style.maxHeight = null : dreamBody.style.maxHeight = dreamBody.scrollHeight + 'px'
+  }
+  setEditText = () => {
+    this.refs.option.textContent = 'Edit Dream'
+    this.refs.option.classList.add('appear')
+  }
+  setDeleteText = () => {
+    this.refs.option.textContent = 'Delete Dream'
+    this.refs.option.classList.add('appear')
+  }
+  removeOptionText = () => {
+    this.refs.option.classList.remove('appear')
   }
   render() {
     return (
@@ -59,10 +67,20 @@ class DreamListItem extends React.Component {
         <div className="dream__body" ref="dreamBody">
           <p className="dream__entry"><i className="fas fa-quote-left dream__quote"></i>{this.props.entry}</p>
           <div className="dream__options">
+            <span className="dream__options-text" ref="option"></span>
             <Link to={`/edit/${this.props.id}`} className="dream__link">
-              <i className="fas fa-pencil-alt dream__edit"></i>
+              <i 
+                className="fas fa-pencil-alt dream__edit" 
+                onMouseEnter={this.setEditText} 
+                onMouseLeave={this.removeOptionText}>
+              </i>
             </Link>
-            <i className="fas fa-times-circle dream__delete" onClick={this.onRemove}></i>
+            <i 
+              className="fas fa-times-circle dream__delete" 
+              onMouseEnter={this.setDeleteText}
+              onMouseLeave={this.removeOptionText}
+              onClick={this.onRemove}>
+            </i>
           </div>
         </div>
       </div>

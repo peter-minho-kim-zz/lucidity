@@ -89,6 +89,16 @@
   }
 }
 
+.dream__options-text {
+  margin-right: 2rem;
+  opacity: 0;
+  transition: all .2s;
+}
+
 .disappear {
   opacity: 0;
+}
+
+.appear {
+  opacity: 1;
 }
