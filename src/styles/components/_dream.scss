@@ -13,6 +13,7 @@
   }
 
   &__header {
+    align-items: center;
     display: flex;
     justify-content: space-between;
   }
@@ -34,12 +35,13 @@
   }
 
   &__info-container {
+    align-items: center;
     display: flex;
-    width: 55rem;
+    width: 57rem;
   }
 
   &__info-container > div {
-    width: 13.5rem;
+    width: 15rem;
   }
 
   &__body {
@@ -64,7 +66,6 @@
 
   &__edit-text {
     color: $white;
-    // display: none;
     transition: all .2s;
   }
 

@@ -1,0 +1,50 @@
+.lucidity-level__tooltip {
+  @include tooltip;
+
+  & .tooltiptext {
+    @include tooltiptext;
+    margin-left: -7.8rem;
+  }
+
+  & .tooltiptext::after {
+    @include tooltiptext-after;
+  }
+
+  &:hover .tooltiptext {
+    opacity: 1;
+  }
+}
+
+.dream-type__tooltip {
+  @include tooltip;
+
+  & .tooltiptext {
+    @include tooltiptext;
+    margin-left: -8.8rem;
+  }
+
+  & .tooltiptext::after {
+    @include tooltiptext-after;
+  }
+
+  &:hover .tooltiptext {
+    opacity: 1;
+  }
+}
+
+.hours-slept__tooltip {
+  @include tooltip;
+
+  & .tooltiptext {
+    @include tooltiptext;
+    margin-left: -7.8rem;
+  }
+
+  & .tooltiptext::after {
+    @include tooltiptext-after;
+  }
+
+  &:hover .tooltiptext {
+    opacity: 1;
+  }
+}

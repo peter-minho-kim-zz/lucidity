@@ -114,13 +114,28 @@ class DreamForm extends React.Component {
             value={this.state.title}
             onChange={this.onTitleChange}
             className="form__title-input"
-            />
+          />
+          <textarea
+            className="form__entry-text-area"
+            placeholder="What did you dream about?"
+            value={this.state.entry}
+            onChange={this.onEntryChange}
+          >
+          </textarea>
           <input 
             type="text" 
             placeholder="Hours Slept"
             value={this.state.hoursSlept}
             onChange={this.onHoursSleptChange}
             className="form__hours-slept-input"
+          />
+          <SingleDatePicker
+            date={this.state.createdAt}
+            onDateChange={this.onDateChange}
+            focused={this.state.calendarFocused}
+            onFocusChange={this.onFocusChange}
+            numberOfMonths={1}
+            isOutsideRange={() => false}
           />
           <select 
             className="form__dream-type-select"
@@ -130,20 +145,6 @@ class DreamForm extends React.Component {
             <option value="lucid">Lucid</option>
             <option value="nightmare">Nightmare</option>
           </select>
-          <SingleDatePicker 
-            date={this.state.createdAt}
-            onDateChange={this.onDateChange}
-            focused={this.state.calendarFocused}
-            onFocusChange={this.onFocusChange}
-            numberOfMonths={1}
-            isOutsideRange={() => false}
-          />
-          <textarea 
-            className="form__entry-text-area"
-            placeholder="What did you dream about?" 
-            value={this.state.entry}
-            onChange={this.onEntryChange}>
-          </textarea>
           <div className="form__slider-output">
             <div className="form__slider-output__img-container">
               <img src={this.state.imgUrl} alt="lucidity level icon" className="form__slider-output__img"/>
@@ -153,14 +154,18 @@ class DreamForm extends React.Component {
               <p className="form__slider-output__value-label">Lucidity Level</p>
             </div>
           </div>
-          <input 
-            className="form__lucidty-level-slider"
-            onChange={this.onSliderChange} 
-            type="range" 
-            min="0" 
-            max="5" 
-            value={this.state.lucidityLevel} />
-          <button className="form__button">
+          <div className="form__lucidity-level-slider__container">
+            <input 
+              className="form__lucidity-level-slider"
+              onChange={this.onSliderChange} 
+              type="range" 
+              min="0" 
+              max="5" 
+              value={this.state.lucidityLevel} 
+            />
+            <span className="form__lucidity-level-slider__description">(Dream Vividness)</span>
+          </div>
+          <button className="form__button btn btn--blue">
             {this.state.buttonText}
           </button>
         </form>

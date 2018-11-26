@@ -5,20 +5,48 @@
 }
 
 .form {
-  background-color: gray;
   display: grid;
   grid-gap: 2rem;
   grid-template-columns: repeat(8, 1fr);
   grid-template-rows: repeat(10, 1fr);
 
   &__title-input {
+    @include input-idle;
     grid-column: 1 / 6;
     grid-row: 1 / 2;
+    padding: $input-padding;
+
+    &::placeholder {
+      color: $light-gray;
+    }
+
+    &:focus {
+      @include input-focus;
+
+      &::placeholder {
+        color: $light-blue;
+      }
+    }
   }
 
   &__entry-text-area {
+    @include input-idle;
     grid-column: 1 / 7;
     grid-row: 2 / 6;
+    padding: 2rem;
+    resize: none;
+
+    &::placeholder {
+      color: $light-gray;
+    }
+
+    &:focus {
+      @include input-focus;
+
+      &::placeholder {
+        color: $light-blue;
+      }
+    }
   }
 
   .SingleDatePicker {
@@ -27,22 +55,55 @@
   }
 
   &__hours-slept-input {
+    @include input-idle;
     grid-column: 6 / 7;
     grid-row: 1 / 2;
+    text-align: center;
+
+    &::placeholder {
+      color: $light-gray;
+    }
+
+    &:focus {
+      @include input-focus;
+
+      &::placeholder {
+        color: $light-blue;
+      }
+    }
   }
 
   &__dream-type-select {
     grid-column: 7 / 9;
     grid-row: 2 / 3;
+    background-color: transparent;
+    border: 1px solid $light-gray;
+    -webkit-appearance: none;
+    -webkit-border-radius: $input-radius;
+    color: $light-gray;
+    cursor: pointer;
+    font-size: $m-font-size;
+    height: 4.8rem;
+    padding: $input-padding;
+    text-align: center;
+    transition: all .4s;
+
+    &:focus {
+      background-color: rgba($light-blue, .1);
+      border-color: $light-blue;
+      color: $light-blue;
+      outline: none;
+    }
   }
 
   &__slider-output {
+    align-items: center;
     display: flex;
     justify-content: space-around;
     grid-column: 7 / 9;
 
     &__img {
-      width: 5rem;  
+      width: 8.2rem; 
     }
 
     &__value-container {
@@ -50,22 +111,47 @@
     }
 
     &__value {
+      color: $white;
       font-size: $l-font-size;
     }
 
     &__value-label {
+      color: $white;
       font-size: $default-font-size;
     }
   }
 
-  &__lucidty-level-slider {
+  &__lucidity-level-slider__container {
     grid-column: 7 / 9;
     grid-row: 4 / 5;
+    text-align: center;
+  }
+
+  &__lucidity-level-slider {
+    margin-bottom: 5rem;
     width: 100%;
+
+    &__description {
+      color: $white;
+      font-style: italic;
+      font-size: $s-font-size;
+      position: relative;
+        bottom: 4.7rem;
+    }
   }
 
   &__button {
     grid-column: 7 / 9;
     grid-row: 5 / 6;
   }
+}
+
+.SingleDatePickerInput {
+  align-items: center;
+  background-color: transparent !important; 
+  border: 1px solid $light-blue !important;
+  border-radius: 5px !important;
+  display: flex;
+  height: 6.5rem !important;
+  justify-content: space-around;
 }

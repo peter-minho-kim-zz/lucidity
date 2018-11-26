@@ -39,7 +39,7 @@ class DreamListItem extends React.Component {
           </div>
           <div className="dream__info-container">
             <div className="dream__info-box">
-              <span className="dream__type">
+              <span className="dream__type dream-type__tooltip">
                 {(() => {
                   const dreamTypeSplit = this.props.dreamType.split('')
                   const dreamTypeEdit = dreamTypeSplit.map((letter, index) => {
@@ -51,16 +51,28 @@ class DreamListItem extends React.Component {
                   })
                   return dreamTypeEdit.join('')
                 })()}
+                <span className="tooltiptext">Dream Type</span>
               </span>
             </div>
             <div className="dream__info-box">
-              <span className="dream__lucidityLevel"><i className="fas fa-signal dream__level"></i>{this.props.lucidityLevel}</span>
+              <span className="dream__lucidity-level lucidity-level__tooltip">
+                <i className="fas fa-signal dream__level"></i>
+                {this.props.lucidityLevel}
+                <span className="tooltiptext">Lucidity Level</span>
+              </span>
             </div>
             <div className="dream__info-box">
-              <span className="dream__hours"><i className="far fa-clock dream__clock"></i>{this.props.hoursSlept}</span>
+              <span className="dream__hours hours-slept__tooltip">
+                <i className="far fa-clock dream__clock"></i>
+                {this.props.hoursSlept}
+                <span className="tooltiptext">Hours Slept</span>
+              </span>
             </div>
             <div className="dream__info-box">
-              <span className="dream__date"><i className="far fa-calendar-alt dream__calendar"></i>{moment(this.props.createdAt).format('MMM Do, YYYY')}</span>
+              <span className="dream__date">
+                <i className="far fa-calendar-alt dream__calendar"></i>
+                {moment(this.props.createdAt).format('MMM Do, YYYY')}
+              </span>
             </div>
           </div>
         </div>

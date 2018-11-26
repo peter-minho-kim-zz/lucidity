@@ -1,4 +1,5 @@
 @import './abstracts/animations';
+@import './abstracts/mixins';
 @import './abstracts/variables';
 
 @import './base/base';
@@ -14,6 +15,7 @@
 @import './components/heading-text-box';
 @import './components/stars';
 @import './components/stat-cards';
+@import './components/tooltip';
 @import './components/wrapper';
 
 @import './layouts/header';
