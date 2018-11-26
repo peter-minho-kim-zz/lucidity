@@ -1,0 +1,51 @@
+.form-header {
+  color: white;
+  font-size: $l-font-size;
+  font-weight: 400;
+}
+
+.form {
+  background-color: gray;
+  display: grid;
+  grid-gap: 2rem;
+  grid-template-columns: repeat(8, 1fr);
+  grid-template-rows: repeat(10, 1fr);
+
+  &__title-input {
+    grid-column: 1 / 6;
+  }
+
+  &__entry-text-area {
+    grid-column: 1 / 7;
+    grid-row: 2 / 6;
+  }
+
+  .SingleDatePicker {
+    grid-column: 7 / 9;
+    text-align: center;
+  }
+
+  &__hours-slept-input {
+    grid-column: 6 / 7;
+  }
+
+  &__dream-type-select {
+    grid-column: 7 / 9;
+    grid-row: 2 / 3;
+  }
+
+  &__slider-output {
+    
+  }
+
+  &__lucidty-level-slider {
+    grid-column: 7 / 9;
+    grid-row: 4 / 5;
+    width: 100%;
+  }
+
+  &__button {
+    grid-column: 7 / 9;
+    grid-row: 5 / 6;
+  }
+}

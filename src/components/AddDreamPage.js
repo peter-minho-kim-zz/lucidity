@@ -10,8 +10,7 @@ export class AddDreamPage extends React.Component {
   }
   render() {
     return (
-      <div>
-        <h1>Add Dream</h1>
+      <div className="wrapper">
         <DreamForm
           onSubmit={this.onSubmit}
         />

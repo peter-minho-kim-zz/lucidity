@@ -15,7 +15,8 @@ class DreamForm extends React.Component {
       lucidityLevel: props.dream ? props.dream.lucidityLevel : 0,
       calendarFocused: false,
       error: '',
-      buttonText: ''
+      buttonText: '',
+      imgUrl: ''
     }
   }
   onTitleChange = (e) => {
@@ -44,6 +45,18 @@ class DreamForm extends React.Component {
   onSliderChange = (e) => {
     const lucidityLevel = e.target.value
     this.setState(() => ({ lucidityLevel }))
+
+    lucidityLevel === '0' ?
+      this.state.imgUrl = './images/avg-sleep.png' :
+    lucidityLevel === '1' ?
+      this.state.imgUrl = './images/avg-lucidity.png' :
+    lucidityLevel === '2' ?
+      this.state.imgUrl = './images/avg-sleep.png' :
+    lucidityLevel === '3' ?
+      this.state.imgUrl = './images/avg-lucidity.png' :
+    lucidityLevel === '4' ?
+      this.state.imgUrl = './images/avg-sleep.png' :
+    this.state.imgUrl = './images/avg-lucidity.png'  
   }
   onFocusChange = ({ focused }) => {
     this.setState(() => ({ calendarFocused: focused }))
@@ -71,23 +84,27 @@ class DreamForm extends React.Component {
   }
   render() {
     return (
-      <div>
+      <div className="form-container">
+        <h2 className="form-header">Add New Dream</h2>
         {this.state.error && <p>{this.state.error}</p>}
-        <form onSubmit={this.onSubmit}>
+        <form onSubmit={this.onSubmit} className="form">
           <input 
             type="text" 
             placeholder="Title" 
             autoFocus 
             value={this.state.title}
             onChange={this.onTitleChange}
+            className="form__title-input"
             />
           <input 
             type="text" 
             placeholder="Hours Slept"
             value={this.state.hoursSlept}
             onChange={this.onHoursSleptChange}
+            className="form__hours-slept-input"
           />
           <select 
+            className="form__dream-type-select"
             value={this.state.dreamType}
             onChange={this.onDreamTypeChange}>
             <option value="normal">Normal</option>
@@ -103,17 +120,22 @@ class DreamForm extends React.Component {
             isOutsideRange={() => false}
           />
           <textarea 
+            className="form__entry-text-area"
             placeholder="What did you dream about?" 
             value={this.state.entry}
             onChange={this.onEntryChange}>
           </textarea>
+          <div className="form__slider-output">
+            <img src={this.state.imgUrl} alt="" width="45"/>
+          </div>
           <input 
+            className="form__lucidty-level-slider"
             onChange={this.onSliderChange} 
             type="range" 
             min="0" 
             max="5" 
             value={this.state.lucidityLevel} />
-          <button>
+          <button className="form__button">
             {this.state.buttonText}
           </button>
         </form>
