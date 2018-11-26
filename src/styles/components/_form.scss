@@ -13,6 +13,7 @@
 
   &__title-input {
     grid-column: 1 / 6;
+    grid-row: 1 / 2;
   }
 
   &__entry-text-area {
@@ -27,6 +28,7 @@
 
   &__hours-slept-input {
     grid-column: 6 / 7;
+    grid-row: 1 / 2;
   }
 
   &__dream-type-select {
@@ -35,7 +37,25 @@
   }
 
   &__slider-output {
-    
+    display: flex;
+    justify-content: space-around;
+    grid-column: 7 / 9;
+
+    &__img {
+      width: 5rem;  
+    }
+
+    &__value-container {
+      text-align: center;
+    }
+
+    &__value {
+      font-size: $l-font-size;
+    }
+
+    &__value-label {
+      font-size: $default-font-size;
+    }
   }
 
   &__lucidty-level-slider {

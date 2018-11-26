@@ -1,5 +1,4 @@
 import React from 'react'
-import AboutPage from '../components/AboutPage'
 import AddDreamPage from '../components/AddDreamPage'
 import DreamsPage from '../components/DreamsPage'
 import DashboardPage from '../components/DashboardPage'
@@ -22,7 +21,6 @@ const AppRouter = () => (
         <Route path="/dreams" component={DreamsPage} />
         <Route path="/create" component={AddDreamPage} />
         <Route path="/edit/:id" component={EditDreamPage} />
-        <Route path="/about" component={AboutPage} />
         <Route component={NotFoundPage} />
       </Switch>
     </div>

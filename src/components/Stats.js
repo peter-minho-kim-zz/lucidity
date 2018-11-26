@@ -25,22 +25,48 @@ class Stats extends React.Component {
 
       // Calculate average sleep time
       totalSleepTime += dream.hoursSlept
-      this.state.avgSleepTime = (totalSleepTime / dreams.length).toFixed(1)
+      this.setState(() => {
+        return {
+          avgSleepTime: (totalSleepTime / dreams.length).toFixed(1)
+        }
+      })
 
       // Calculate average lucidity level
       totalLucidityLevel += dream.lucidityLevel
-      this.state.avgLucidityLevel = (totalLucidityLevel / dreams.length).toFixed(1)
+      this.setState(() => {
+        return {
+          avgLucidityLevel: (totalLucidityLevel / dreams.length).toFixed(1)
+        }
+      })
     })
     
     // Calculate rank
-    lucidDreamCount >= 3 ? this.state.rank = 'Dreamwalker' : this.state.rank = 'Stargazer'
+    lucidDreamCount >= 3 ? 
+    this.setState(() => {
+      return {
+        rank: 'Dreamwalker'
+      }
+    })
+    : 
+    this.setState(() => {
+      return {
+        rank: 'Stargazer'
+      }
+    })
     
     // Calculate lucid dream percentage
-    // this.state.lucidDreamPct = ((lucidDreamCount / dreams.length) * 100).toFixed(2).toString() + '%'
     dreams.length !== 0 ? 
-      this.state.lucidDreamPct = ((lucidDreamCount / dreams.length) * 100).toFixed(2).toString() + '%'
+      this.setState(() => {
+        return {
+          lucidDreamPct: ((lucidDreamCount / dreams.length) * 100).toFixed(2).toString() + '%'
+        }
+      })
       :
-      this.state.lucidDreamPct = '0%'
+      this.setState(() => {
+        return {
+          lucidDreamPct: '0%'
+        }
+      })
   }
   render() {
     return (

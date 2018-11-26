@@ -16,7 +16,7 @@ class DreamForm extends React.Component {
       calendarFocused: false,
       error: '',
       buttonText: '',
-      imgUrl: ''
+      imgUrl: './images/avg-sleep.png'
     }
   }
   onTitleChange = (e) => {
@@ -46,17 +46,36 @@ class DreamForm extends React.Component {
     const lucidityLevel = e.target.value
     this.setState(() => ({ lucidityLevel }))
 
-    lucidityLevel === '0' ?
-      this.state.imgUrl = './images/avg-sleep.png' :
-    lucidityLevel === '1' ?
-      this.state.imgUrl = './images/avg-lucidity.png' :
-    lucidityLevel === '2' ?
-      this.state.imgUrl = './images/avg-sleep.png' :
-    lucidityLevel === '3' ?
-      this.state.imgUrl = './images/avg-lucidity.png' :
-    lucidityLevel === '4' ?
-      this.state.imgUrl = './images/avg-sleep.png' :
-    this.state.imgUrl = './images/avg-lucidity.png'  
+    lucidityLevel === '0' ? this.setState(() => {
+      return {
+        imgUrl: './images/avg-sleep.png'
+      }
+    }) :
+    lucidityLevel === '1' ? this.setState(() => {
+      return {
+        imgUrl: './images/avg-lucidity.png'
+      }
+    }) :
+    lucidityLevel === '2' ? this.setState(() => {
+      return {
+        imgUrl: './images/avg-sleep.png'
+      }
+    }) :
+    lucidityLevel === '3' ? this.setState(() => {
+      return {
+        imgUrl: './images/avg-lucidity.png'
+      }
+    }) :
+    lucidityLevel === '4' ? this.setState(() => {
+      return {
+        imgUrl: './images/avg-sleep.png'
+      }
+    }) :
+    this.setState(() => {
+      return {
+        imgUrl: './images/avg-lucidity.png'
+      }
+    }) 
   }
   onFocusChange = ({ focused }) => {
     this.setState(() => ({ calendarFocused: focused }))
@@ -126,7 +145,13 @@ class DreamForm extends React.Component {
             onChange={this.onEntryChange}>
           </textarea>
           <div className="form__slider-output">
-            <img src={this.state.imgUrl} alt="" width="45"/>
+            <div className="form__slider-output__img-container">
+              <img src={this.state.imgUrl} alt="lucidity level icon" className="form__slider-output__img"/>
+            </div>
+            <div className="form__slider-output__value-container">
+              <span className="form__slider-output__value">{this.state.lucidityLevel}</span>
+              <p className="form__slider-output__value-label">Lucidity Level</p>
+            </div>
           </div>
           <input 
             className="form__lucidty-level-slider"
