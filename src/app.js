@@ -14,13 +14,8 @@ const store = configureStore()
 
 const now = moment.now()
 store.dispatch(addDream({
-  title: 'Empty Cell Mystery',
-  entry: `Andy is put in a cell with a dirt floor and only one window. 
-          The window is too high for him to reach. The only thing in the 
-          cell is a shovel. He won’t be able to get any food or water and 
-          only has two days to escape or he’ll die. Andy can’t dig a 
-          tunnel because it will take him much longer than two days to do 
-          it. How will Andy escape from the cell? `,
+  title: 'Down the Rabbit Hole',
+  entry: 'Alice sits drowsily by a riverbank, bored by the book her older sister reads to her. Out of nowhere, a White Rabbit runs past her, fretting that he will be late. The Rabbit pulls a watch out of his waistcoat pocket and runs across the field and down a hole. Alice impulsively follows the Rabbit and tumbles down the deep hole that resembles a well, falling slowly for a long time. As she floats down, she notices that the sides of the well are covered with cupboards and shelves.',
   hoursSlept: 7,
   dreamType: 'normal',
   createdAt: moment(now), 
@@ -28,11 +23,8 @@ store.dispatch(addDream({
 }))
 
 store.dispatch(addDream({
-  title: 'Poisonous Drinks',
-  entry: `Marissa and Juliana went out for drinks together. 
-          They ordered the same drink. Juliana was really thirsty 
-          and finished five in the time it took Marissa to finish one. 
-          The drinks were poisoned, but only Marissa died. How?`,
+  title: 'The Pool of Tears',
+  entry: `After finishing the cake that says “EAT ME,” Alice grows to nine feet tall and finds that she can barely get an eye down to the doorway. She begins to cry, and her massive tears form a sizable pool at her feet. The White Rabbit reappears and mutters to himself about keeping a Duchess waiting. Alice attempts to speak to him, but he scuttles away, leaving behind his gloves and fan.`,
   hoursSlept: 10,
   dreamType: 'lucid',
   createdAt: moment(now).subtract(2, 'days'),
@@ -40,16 +32,8 @@ store.dispatch(addDream({
 }))
 
 store.dispatch(addDream({
-  title: 'Suicide or Not?',
-  entry: `A dead female body lies at the bottom of a multistory 
-          building. It looks as though she committed suicide by jumping 
-          from one of the floors. When the detective arrives, he goes to 
-          the first floor of the building, opens the closed window, and 
-          flips a coin towards the floor. He goes to the second floor and 
-          does the exact same thing. He continues to do this until he gets 
-          to the top floor of the building. When he comes back down, he 
-          states that it was a murder and not a suicide. How does he know 
-          that?`,
+  title: 'A Caucus Race and a Long Tale',
+  entry: 'Alice and the group of animals land on the bank and focus on getting dry. Alice begins arguing with the Lory, but the Mouse interjects and commands everyone to sit down and listen to a history lesson. The Mouse reasons that the story of William the Conqueror would be best since this story is the driest thing it knows.',
   hoursSlept: 7,
   dreamType: 'nightmare',
   createdAt: moment(now).subtract(4, 'days'),
@@ -57,14 +41,8 @@ store.dispatch(addDream({
 }))
 
 store.dispatch(addDream({
-  title: 'Love at a Funeral',
-  entry: `A girl is at the funeral of her mother. She meets a nice guy that 
-          she didn’t know who also was at the funeral and they hit it off. 
-          She was busy at the funeral and didn’t have time to ask him for his 
-          number before he left. She tried really hard to track him down, but 
-          no one knew who he was or how to contact him. A few days later her 
-          sister dies and the police suspect it to be a murder. Who killed 
-          her sister?`,
+  title: 'The Rabbit Sends in a Little Bill',
+  entry: 'The White Rabbit approaches Alice, looking for his gloves and fan. Alice searches dutifully but cannot find them. The White Rabbit mistakes Alice for his housemaid, Mary Ann, and commands her to go to his house and fetch his things. Startled by the Rabbit’s demands, Alice obeys and soon finds his house.',
   hoursSlept: 6,
   dreamType: 'normal',
   createdAt: moment(now).subtract(6, 'days'),
@@ -72,12 +50,8 @@ store.dispatch(addDream({
 }))
 
 store.dispatch(addDream({
-  title: 'Stolen Ring',
-  entry: `Nicole went to the police to report that someone had stolen her vintage 
-          ring. When the police got to her house they notice that the window was 
-          broken, there was a total mess inside, and there were dirty footprints 
-          on the carpet. But, there were no other signs of a break-in. The next 
-          day, the police arrested Nicole for fraud. Why?`,
+  title: 'Advice from a Caterpillar',
+  entry: 'Alice comes across a Caterpillar that is resting on top of a giant mushroom and smoking a hookah pipe. The two stare at each other in silence for a while before the Caterpillar asks Alice, “Who are you?” Alice has trouble explaining who she is to the antagonistic and contemptuous Caterpillar. Dejected, she turns to leave, but the Caterpillar calls her back to recite a poem.',
   hoursSlept: 8,
   dreamType: 'lucid',
   createdAt: moment(now).subtract(8, 'days'),
@@ -85,17 +59,8 @@ store.dispatch(addDream({
 }))
 
 store.dispatch(addDream({
-  title: 'Thief at Sea',
-  entry: `A Japanese ship was leaving the port and on its way to open sea. The 
-          captain went to go oil some parts of the ship and took his ring off so 
-          it wouldn’t get damaged. He left it on the table next to his bunk. When 
-          he returned, it was missing. He had suspected three crew members could be 
-          guilty and asked them what they had been doing for the ten minutes that he 
-          had been gone. The cook said, “I was in the kitchen preparing tonight’s 
-          dinner.” The engineer said, “I was working in the engine room making sure 
-          everything was running smoothly.” The seaman said, “I was on the mast 
-          correcting the flag because someone had attached it upside down by mistake.” 
-          The captain immediately knew who it was. How?`,
+  title: 'Pig and Pepper',
+  entry: 'From the wood, Alice sees a fish in footman’s livery approach the house and knock on the door. A similarly dressed frog answers the door and receives a letter inviting the Duchess to play croquet with the Queen.',
   hoursSlept: 8,
   dreamType: 'nightmare',
   createdAt: moment(now).subtract(10, 'days'),
@@ -103,15 +68,8 @@ store.dispatch(addDream({
 }))
 
 store.dispatch(addDream({
-  title: 'Murder at School',
-  entry: `On the first day of school, someone murdered a history teacher. There were 
-          four people at the school that the police suspected had done it: the landscaper, 
-          a math teacher, a basketball coach, and the principal. These were their alibis: 
-          The landscaper said he was outside mowing the lawn. The math teacher said he 
-          was giving a mid-year test. The basketball coach said he was running practice 
-          drills with his players. The principal said she was in her office. After giving 
-          their alibies, the police arrested the killer immediately. Who killed the history 
-          teacher and how did the police know?`,
+  title: 'A Mad Tea Party',
+  entry: 'Alice approaches a large table set under the tree outside the March Hare’s house and comes across the Mad Hatter and the March Hare taking tea. They rest their elbows on a sleeping Dormouse who sits between them. They tell Alice that there is no room for her at the table, but Alice sits anyway. The March Hare offers Alice wine, but there is none. Alice tells the March Hare that his conduct is uncivil, to which he rejoins that it was uncivil of her to sit down without being invited.',
   hoursSlept: 6,
   dreamType: 'normal',
   createdAt: moment(now).subtract(12, 'days'),
@@ -119,13 +77,8 @@ store.dispatch(addDream({
 }))
 
 store.dispatch(addDream({
-  title: 'Poisonous Pills',
-  entry: `A serial killer kidnapped five different people and sat them down each with two 
-          pills in their hand and a glass of water. He told them each to take one pill but 
-          warned them that one was poisonous and the other was harmless. Whichever pill 
-          the victim didn’t take, the serial killer would take. Every victim somehow chose 
-          the poisonous pill and died. How did the serial killer get them all to take the 
-          poisonous pill?`,
+  title: 'The Queen’s Croquet Ground',
+  entry: 'Alice enters the garden and meets three gardeners in the shape of playing cards. The gardeners Two, Five, and Seven bicker with each other as they paint the white roses on the rose trees red.',
   hoursSlept: 6,
   dreamType: 'lucid',
   createdAt: moment(now).subtract(14, 'days'),
@@ -133,11 +86,8 @@ store.dispatch(addDream({
 }))
 
 store.dispatch(addDream({
-  title: 'Honeymoon Mystery',
-  entry: `A couple went to Hawaii for their honeymoon. Unfortunately, the husband returned 
-          home alone because his wife had died in a horrible boating accident. The police contacted 
-          the travel agent he booked the trip with and arrested him for murdering his wife. How did 
-          they know he did it?`,
+  title: 'The Mock Turtle’s Story',
+  entry: 'After the disappearance of the Cheshire Cat, the croquet game starts up again and the Duchess takes Alice’s arm. The two start to walk, and Alice becomes uncomfortable that the Duchess holds her so close. Alice thinks that the Duchess is behaving pleasantly because there isn’t any pepper present.',
   hoursSlept: 7,
   dreamType: 'nightmare',
   createdAt: moment(now).subtract(16, 'days'),
@@ -145,12 +95,8 @@ store.dispatch(addDream({
 }))
 
 store.dispatch(addDream({
-  title: 'Science Case',
-  entry: `A chemist was murdered in his own lab. The only evidence was a piece of paper that had 
-          the names of chemical substances written on it. The substances were nickel, carbon, oxygen, 
-          lanthanum, and sulfur. The chemist only had three people come by his lab on the day of the murder: 
-          fellow scientist Claire, his nephew Nicolas, his wife, and his friend Marc. The police arrested 
-          the murderer right away. How did they know who it was?`,
+  title: 'The Lobster Quadrille',
+  entry: 'The Mock Turtle continues to sigh and sob and finally asks Alice if she has ever been introduced to a lobster. Alice almost volunteers that she once tasted one, but checks herself and simply says no. The Mock Turtle and the Gryphon describe the Lobster-Quadrille, a dance where all of the sea animals (except the jellyfish) partner up with the lobsters, advance from the seashore and throw the lobsters out to sea.',
   hoursSlept: 5,
   dreamType: 'normal',
   createdAt: moment(now).subtract(18, 'days'),
@@ -158,12 +104,8 @@ store.dispatch(addDream({
 }))
 
 // store.dispatch(addDream({
-//   title: 'Recorded Last Words',
-//   entry: `A man was found on the floor dead with a cassette recorder in one hand and a gun in 
-//           the other. When the police arrive at the scene they pressed play on the recorder. It was 
-//           the man’s voice. He said, “I have nothing else to live for. I can’t go on,” followed by the 
-//           sound of a gunshot. After listening, the police knew that this was a murder, not a suicide. 
-//           How?`,
+//   title: 'Who Stole the Tarts?',
+//   entry: 'Alice arrives in the courtroom and finds the King and Queen of Hearts on their thrones, surrounded by a large crowd of animals and the whole deck of cards. The Knave lies chained before them. Alice surveys the room and takes great pleasure in identifying the various features of a court of law that she has read about.',
 //   hoursSlept: 9,
 //   dreamType: 'lucid',
 //   createdAt: moment(now).subtract(20, 'days'),
@@ -171,61 +113,12 @@ store.dispatch(addDream({
 // }))
 
 // store.dispatch(addDream({
-//   title: 'Guilty in Court',
-//   entry: `A woman was in court for killing her husband. She said she wasn’t guilty and that 
-//           she dearly missed him. In the closing statement, the woman’s lawyer stands up and says, 
-//           “Her husband was just missing. Everyone look at the doors. He’s going to walk through them 
-//           in about 30 seconds.” The entire jury stares at the doors waiting for waiting for this woman’s 
-//           husband to walk through the doors. The lawyer and the woman stare at the jury. The lawyer 
-//           concludes by saying, “See! If you were so sure she killed her husband, you wouldn’t be watching 
-//           that door!” The jury immediately gave a guilty verdict. Why?`,
+//   title: 'Alice’s Evidence',
+//   entry: 'Alice jumps to the White Rabbit’s call to the stand. She forgets that she has grown larger and knocks over the jury stand, then scrambles to put all of the jurors back. Alice claims to know “nothing whatever” about the tarts, which the King deems “very important.” The White Rabbit corrects the King, suggesting that he in fact means “unimportant.” The King agrees, muttering the words “important” and “unimportant” to himself.',
 //   hoursSlept: 10,
 //   dreamType: 'nightmare',
 //   createdAt: moment(now).subtract(22, 'days'),
 //   lucidityLevel: 3
-// }))
-
-// store.dispatch(addDream({
-//   title: 'Romantic Journey',
-//   entry: `Mr. and Mrs. Clyde went on a trip to the mountains. But 2 days later, Mr. Clyde 
-//           returned home alone. He went to the police and said that Mrs. Clyde had fallen to her death. 
-//           The next day, Detective Stevens visited Mr. Clyde and arrested him for his wife’s murder. 
-//           Clyde confessed his guilt and asked the detective how he’d found out he was the murderer. 
-//           Stevens said he’d simply called a travel agent and asked for some information. What did the 
-//           travel agent say to the detective?`,
-//   hoursSlept: 10,
-//   dreamType: 'normal',
-//   createdAt: moment(now).subtract(24, 'days'),
-//   lucidityLevel: 2
-// }))
-
-// store.dispatch(addDream({
-//   title: 'Climbing Trip',
-//   entry: `A couple went on for a climbing trip. But only the husband returned from the 
-//           vacation and said that his wife slipped off while climbing and died. On investigating, 
-//           the local sheriff arrested him saying, “Your travel agent called. You murdered your wife.” 
-//           The man did not inform anyone about the trip. Then how did the agent was so sure that it 
-//           is a murder?`,
-//   hoursSlept: 5,
-//   dreamType: 'lucid',
-//   createdAt: moment(now).subtract(26, 'days'),
-//   lucidityLevel: 4
-// }))
-
-// store.dispatch(addDream({
-//   title: 'Who Stole the Money',
-//   entry: `A man placed a $100 dollar bill on his desk and left for work. When he 
-//           returned back the money was gone. He has three suspects: the cook, the maid and 
-//           the electrician. The cook said he put the bill under a book on his desk to keep 
-//           it safe. The man checked and it is no longer there. The maid said she moved the 
-//           bill to the inside of the book between page 1 and 2 while she was cleaning. Again, 
-//           the man checked the book and there was nothing between page 1 and 2. The electrician 
-//           said he saw the bill sticking out of the book and he moved it between page 2 and 3 
-//           to keep it safe. Who stole the money?`,
-//   hoursSlept: 7,
-//   dreamType: 'nightmare',
-//   createdAt: moment(now).subtract(28, 'days'),
-//   lucidityLevel: 4
 // }))
 
 const jsx = (

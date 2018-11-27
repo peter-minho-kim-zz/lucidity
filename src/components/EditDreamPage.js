@@ -14,7 +14,7 @@ class EditDreamPage extends React.Component {
   }
   render() {
     return (
-      <div>
+      <div className="wrapper">
         <DreamForm
           dream={this.props.dream}
           onSubmit={this.onSubmit}

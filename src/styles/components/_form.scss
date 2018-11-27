@@ -1,6 +1,6 @@
 .form-header {
   color: white;
-  font-size: $l-font-size;
+  font-size: $lr-font-size;
   font-weight: 400;
 }
 
@@ -14,7 +14,7 @@
     @include input-idle;
     grid-column: 1 / 6;
     grid-row: 1 / 2;
-    padding: $input-padding;
+    padding: 0 2rem;
 
     &::placeholder {
       color: $light-gray;

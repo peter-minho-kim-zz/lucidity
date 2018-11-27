@@ -16,7 +16,7 @@ class DreamForm extends React.Component {
       calendarFocused: false,
       error: '',
       buttonText: '',
-      imgUrl: './images/lucidity-level-0.png'
+      imgUrl: props.dream ? `../images/lucidity-level-${props.dream.lucidityLevel}.png` : '../images/lucidity-level-0.png'
     }
   }
   onTitleChange = (e) => {
@@ -48,32 +48,32 @@ class DreamForm extends React.Component {
 
     lucidityLevel === '0' ? this.setState(() => {
       return {
-        imgUrl: './images/lucidity-level-0.png'
+        imgUrl: '../images/lucidity-level-0.png'
       }
     }) :
     lucidityLevel === '1' ? this.setState(() => {
       return {
-        imgUrl: './images/lucidity-level-1.png'
+        imgUrl: '../images/lucidity-level-1.png'
       }
     }) :
     lucidityLevel === '2' ? this.setState(() => {
       return {
-        imgUrl: './images/lucidity-level-2.png'
+        imgUrl: '../images/lucidity-level-2.png'
       }
     }) :
     lucidityLevel === '3' ? this.setState(() => {
       return {
-        imgUrl: './images/lucidity-level-3.png'
+        imgUrl: '../images/lucidity-level-3.png'
       }
     }) :
     lucidityLevel === '4' ? this.setState(() => {
       return {
-        imgUrl: './images/lucidity-level-4.png'
+        imgUrl: '../images/lucidity-level-4.png'
       }
     }) :
     this.setState(() => {
       return {
-        imgUrl: './images/lucidity-level-5.png'
+        imgUrl: '../images/lucidity-level-5.png'
       }
     }) 
   }
@@ -104,7 +104,7 @@ class DreamForm extends React.Component {
   render() {
     return (
       <div className="form-container">
-        <h2 className="form-header">Add New Dream</h2>
+        <h2 className="form-header u-margin-bottom-small">Add New Dream</h2>
         {this.state.error && <p>{this.state.error}</p>}
         <form onSubmit={this.onSubmit} className="form">
           <input 
