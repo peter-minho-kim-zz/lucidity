@@ -1,6 +1,7 @@
 .header {
   background-color: transparent;
   position: absolute;
+    top: 1.5rem;
   width: 100%;
   z-index: 10;
 
@@ -11,6 +12,10 @@
     margin: 0 auto;
     padding: 1.3rem 0;
     width: 114rem;
+
+    &__brand {
+      height: 2rem;
+    }
 
     &__link {
       &,
@@ -28,20 +33,10 @@
       }
     }
 
-    &__home-links {
-
+    &__main-links, &__home-links {
       .nav__link:not(:last-child) {
-        margin-right: 2.5rem;
-      }
-    }
+        margin-right: 3rem;
 
-    &__main-links {
-      position: absolute;
-        left: 50%;
-      transform: translateX(-50%);
-
-      .nav__link {
-        margin: 0 2.5rem;
       }
     }
 

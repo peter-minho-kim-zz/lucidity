@@ -7,7 +7,9 @@ const Header = (props) => {
       {window.location.pathname === '/' ? 
         <header className="header">
           <nav className="nav">
-            <NavLink to="/" className="nav__link">Lucidity</NavLink>
+            <NavLink to="/" className="nav__link">
+              <img src="../images/lucidity-brand.png" className="nav__brand" alt="lucidity brand" />
+            </NavLink>
             <div className="nav__home-links">
               <NavLink to="/dashboard" className="nav__link" activeClassName="is-active">Sign Up</NavLink>
               <NavLink to="/dashboard" className="nav__link" activeClassName="is-active">Demo</NavLink>
@@ -17,13 +19,14 @@ const Header = (props) => {
         : 
         <header className="header">
           <nav className="nav">
-            <NavLink to="/" className="nav__link">Lucidity</NavLink>
+            <NavLink to="/" className="nav__link">
+              <img src="../images/lucidity-brand.png" className="nav__brand" alt="lucidity brand"/>
+            </NavLink>
             <div className="nav__main-links">
               <NavLink to="/dashboard" className="nav__link" activeClassName="is-active">Dashboard</NavLink>
               <NavLink to="/dreams" className="nav__link" activeClassName="is-active">Dreams</NavLink>
               <NavLink to="/create" className="nav__link" activeClassName="is-active">New Dream</NavLink>
             </div>
-            <NavLink to="#" className="nav__link" activeClassName="is-active">?</NavLink>
           </nav>
         </header>
       }

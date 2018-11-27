@@ -131,6 +131,51 @@
     margin-bottom: 5rem;
     width: 100%;
 
+    -webkit-appearance: none;
+    height: 5px;
+    border-radius: 5px;
+    background: linear-gradient(to right, $light-blue 0%, $light-pink 100%);
+    cursor: pointer;
+    outline: none;
+    opacity: 0.7;
+    -webkit-transition: .4s;
+    transition: all .4s;
+
+    &::-webkit-slider-thumb {
+      -webkit-appearance: none;
+      appearance: none;
+      background: $white;
+      border: 3px solid $white;
+      border-radius: 50%;
+      cursor: pointer;
+      height: 1rem;
+      width: 1rem;
+      -webkit-transition: .3s;
+      -moz-transition: .3;
+      transition: all .3s;
+    }
+
+    &:hover, &:focus {
+      &::-webkit-slider-thumb {
+        -webkit-appearance: none;
+        appearance: none;
+        width: 1.5rem;
+        height: 1.5rem;
+        border-radius: 50%;
+        border: 3px solid $white;
+      }
+    }
+
+    &::-moz-range-thumb {
+      appearance: none;
+      width: 1.5rem;
+      height: 1.5rem;
+      border-radius: 50%;
+      border: 3px solid $light-blue;
+      background: $lighter-blue;
+      cursor: pointer;
+    }
+
     &__description {
       color: $white;
       font-style: italic;
