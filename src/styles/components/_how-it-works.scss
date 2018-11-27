@@ -1,0 +1,35 @@
+.how-it-works {
+  display: flex;
+  justify-content: space-between;
+
+  &__text-container {
+    padding: 4rem;
+    text-align: left;
+  }
+
+  &__video {
+    width: 57rem;
+  }
+
+  &__text {
+    text-align: left;
+
+    &--pre {
+      color: lighten($light-purple, 20%);
+      font-size: $s-font-size;
+    }
+
+    &--main {
+      color: $white;
+      font-size: $l-font-size;
+      font-weight: 600;
+      text-transform: none;
+    }
+
+    &--sub {
+      color: $white;
+      font-size: $default-font-size;
+      text-transform: none;
+    }
+  }
+}

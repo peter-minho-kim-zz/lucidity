@@ -35,7 +35,7 @@ class Charts extends React.Component {
       },
       sleepTimeChartOptions: {
         animation: {
-          duration: 2500,
+          duration: 2600,
           easing: 'easeOutCubic'
         },
         legend: {
@@ -79,7 +79,7 @@ class Charts extends React.Component {
       },
       dreamTypeChartOptions: {
         animation: {
-          duration: 2500,
+          duration: 2600,
           easing: 'easeOutCubic'
         },
         cutoutPercentage: 75,
@@ -114,14 +114,14 @@ class Charts extends React.Component {
   }
   render() {
     return (
-      <div className="charts-container u-margin-bottom-big">
+      <div className="charts-container u-margin-bottom-big fade-in-bottom">
         <div className="chart chart--line-container">
           <Line
             data={this.state.sleepTimeChartData}
             options={this.state.sleepTimeChartOptions}
           />
         </div>
-        <div className="chart chart--doughnut-container">
+        <div className="chart chart--doughnut-container fade-in-bottom">
           <Doughnut
             data={this.state.dreamTypeChartData}
             options={this.state.dreamTypeChartOptions}

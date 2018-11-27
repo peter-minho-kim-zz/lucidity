@@ -1,6 +1,7 @@
 .dream-list-filters {
   display: flex;
   justify-content: space-between;
+  animation-delay: .3s;
 
   & > *:not(:last-child) {
     margin-right: 3rem;

@@ -72,21 +72,21 @@ class Stats extends React.Component {
     return (
       <div className="stat-cards-wrapper">
         <div className="stat-cards-wrapper__vertical u-margin-bottom-medium">
-          <div className="stat-card stat-card--vertical">
+          <div className="stat-card stat-card--vertical stat-card--1 fade-in-bottom">
             <img src="./images/lucid-pct.png" alt="lucid dream percentage" className="stat-card__img"/>
             <div className="stat-card--vertical__text-box">
               <p className="stat-card__stat">{this.state.lucidDreamPct}</p>
               <p className="stat-card__title">lucid dream percentage</p>
             </div>
           </div>
-          <div className="stat-card stat-card--vertical">
+          <div className="stat-card stat-card--vertical stat-card--2 fade-in-bottom">
             <img src="./images/current-rank.png" alt="current rank" className="stat-card__img" />
             <div className="stat-card--vertical__text-box">
               <p className="stat-card__stat">{this.state.rank}</p>    
               <p className="stat-card__title">current rank</p>   
             </div>
           </div>
-          <div className="stat-card stat-card--vertical">
+          <div className="stat-card stat-card--vertical stat-card--3 fade-in-bottom">
             <img src="./images/total-entries.png" alt="total entries" className="stat-card__img" />
             <div className="stat-card--vertical__text-box">
               <p className="stat-card__stat">{this.state.totalEntries}</p>
@@ -95,7 +95,7 @@ class Stats extends React.Component {
           </div>
         </div>
         <div className="stat-cards-wrapper__horizontal u-margin-bottom-medium">
-          <div className="stat-card stat-card--horizontal">          
+          <div className="stat-card stat-card--horizontal stat-card--4 fade-in-bottom">          
             <div className="stat-card--horizontal__text-box">
               <p className="stat-card__stat">{this.state.avgSleepTime} hours</p>
               <p className="stat-card__title">average sleep time</p>
@@ -104,7 +104,7 @@ class Stats extends React.Component {
               <img src="./images/avg-sleep.png" alt="average sleep" className="stat-card__img stat-card__img--horizontal" />
             </div>
           </div>
-          <div className="stat-card stat-card--horizontal">
+          <div className="stat-card stat-card--horizontal stat-card--5 fade-in-bottom">
             <div className="stat-card--horizontal__text-box">
               <p className="stat-card__stat">{this.state.avgLucidityLevel}</p>
               <p className="stat-card__title">average lucidity</p>

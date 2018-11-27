@@ -3,7 +3,7 @@ import { Link, NavLink } from 'react-router-dom'
 
 const Header = (props) => {
   return (
-    <div className="header-wrapper">
+    <div className="header-wrapper fade-in-top">
       {window.location.pathname === '/' ? 
         <header className="header">
           <nav className="nav">

@@ -13,15 +13,28 @@
 }
 
 .stat-card {
-  // background-color: $gray;
-  // border: 1px solid;
-  // border-image: linear-gradient(to bottom right, $light-blue 0%, $light-pink 100%);
-  // border-image-slice: 1;
-  // border-radius: 3px;
   font-size: $default-font-size;
   padding: 3rem;
   position: relative;
   text-transform: uppercase;
+
+  &--1 {
+    animation-delay: .3s;
+  }
+  
+  &--2 {
+    animation-delay: .6s;
+  }
+  &--3 {
+    animation-delay: .9s;
+  }
+  &--4 {
+    animation-delay: 1.2s;
+  }
+  &--5 {
+    animation-delay: 1.5s;
+  }
+
 
   &__stat {
     color: $white;

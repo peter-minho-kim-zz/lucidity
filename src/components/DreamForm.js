@@ -16,6 +16,7 @@ class DreamForm extends React.Component {
       calendarFocused: false,
       error: '',
       buttonText: '',
+      formHeading: props.dream ? 'Edit Dream' : 'Add New Dream',
       imgUrl: props.dream ? `../images/lucidity-level-${props.dream.lucidityLevel}.png` : '../images/lucidity-level-0.png'
     }
   }
@@ -103,8 +104,8 @@ class DreamForm extends React.Component {
   }
   render() {
     return (
-      <div className="form-container">
-        <h2 className="form-header u-margin-bottom-small">Add New Dream</h2>
+      <div className="form-container fade-in-bottom">
+        <h2 className="form-header u-margin-bottom-small">{this.state.formHeading}</h2>
         {this.state.error && <p>{this.state.error}</p>}
         <form onSubmit={this.onSubmit} className="form">
           <input 
