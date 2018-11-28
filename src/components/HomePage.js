@@ -74,7 +74,7 @@ export const HomePage = () => {
             </div>
             <div className="how-it-works__text-container">
               <p className="how-it-works__text--pre">
-                Full Visibility
+                Visible Progress
               </p>
               <p className="how-it-works__text--main u-margin-bottom-small">
                 Lucidity Dashboard
