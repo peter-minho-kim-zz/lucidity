@@ -89,14 +89,23 @@ export const HomePage = () => {
       </section>
 
       <footer className="footer u-margin-bottom-big">
-        <div className="footer__contact">
-          <img src="../images/lucidity-brand.png" className="footer__contact__brand" alt="lucidity brand"/>
-          <div className="footer__contact-info">
-            <i class="fas fa-map-marker footer__marker"></i>
+        <div className="footer__brand-container">
+          <img src="../images/lucidity-brand.png" className="footer__brand u-margin-bottom-small" alt="lucidity brand"/>
+          <p className="footer__author-text">
+            <i className="fas fa-code"></i> Peter Kim
+          </p>
+          <div className="footer__social-media u-margin-bottom-small ">
+            <a href="https://github.com/peter-minho-kim" target="_blank"><i className="fab fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/peter-kim-developer/" target="_blank"><i className="fab fa-linkedin"></i></a>
+            <a href="https://www.instagram.com/peter_minho_kim/" target="_blank"><i className="fab fa-instagram"></i></a>
           </div>
-        </div>
-        <div className="footer__social">
-        
+          <div className="copyright-text">
+            <p>
+              Copyright &copy; 2018
+              <br />
+              All Rights Reserved
+            </p>
+          </div>
         </div>
       </footer>
     </div>

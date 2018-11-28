@@ -1,17 +1,44 @@
 .footer {
-  display: flex;
   margin: 0 auto;
   width: $grid-width;
 
-  &__marker {
-    color: $light-blue;
-    font-size: $default-font-size;
+  &__brand {
+    width: 25rem;
   }
 
-  &__contact {
+  &__author-text {
+    color: $white;
+    font-size: $m-font-size;
+  }
 
-    &__brand {
-      width: 25rem;
+  &__social-media a {
+    color: $white;
+    font-size: $m-font-size;
+    transition: all .3s;
+
+    &:nth-child(1):hover {
+      color: $light-blue;
+    }
+
+    &:nth-child(2):hover {
+      color: lighten($light-purple, 25%);
+    }
+
+    &:nth-child(3):hover {
+      color: $light-pink;
+    }
+
+    &:not(:last-child) {
+      margin-right: 1.5rem;
     }
   }
+
+  &__brand-container {
+    text-align: center;
+  }
+}
+
+.copyright-text {
+  font-size: $s-font-size;
+  color: $white;
 }
