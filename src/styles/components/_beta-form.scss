@@ -1,0 +1,103 @@
+.beta-form {
+  width: 60rem;
+
+  &__text {
+    font-size: $default-font-size;
+  }
+
+  &__heading {
+    font-size: $lr-font-size;
+    font-weight: 500;
+  }
+
+  &__input {
+    border: 1px solid $white;
+    background-color: transparent;
+    border-radius: 5px;
+    color: $white;
+    display: block;
+    font: inherit;
+    font-size: $m-font-size;
+    font-weight: 500;
+    margin: 0 auto;
+    outline: none;
+    padding: .7rem 1.5rem;
+    transition: all .4s;
+    width: 30rem;
+
+    &::placeholder {
+      color: $white;
+    }
+
+    &:focus {
+      color: $white;
+      border-color: $white;
+      width: 40rem;
+
+      &::placeholder {
+        color: $white;
+      }
+    }
+  }
+
+  &__button {
+    background-color: transparent;
+    border: 1px solid $white;
+    border-radius: 5px;
+    color: $white;
+    font: inherit;
+    font-size: $default-font-size;
+    outline: none;
+    padding: .5rem 1rem;
+    position: relative;
+    transition: all .3s;
+
+    &:hover, &:focus {
+      border-color: transparent;
+      color: $light-blue;
+      transform: translateX(-3rem);
+    }
+
+    & i {
+      color: $white;
+      font-size: $m-font-size;
+      margin-right: .5rem;
+      transition: .3s;
+    }
+
+    &:hover i, &:focus i {
+      color: $light-blue;
+      transform: translateX(14.5rem);
+    }
+  }
+
+  &__close {
+    background-color: transparent;
+    border: 1px solid transparent;
+    color: $white;
+    font-size: $default-font-size;
+    outline: none;
+    padding: 1rem 1.5rem;
+    position: absolute;
+      top: 0;
+      right: 0;
+    transition: all .3s;
+
+    &:hover, &:focus {
+      border-color: $light-blue;
+    }
+
+      & i {
+        transition: all .3s;
+      }
+
+      &:hover i, &:focus i {
+        color: $light-blue;
+        transform: rotate(90deg);
+      }
+  }
+
+  &__brand {
+    width: 12rem;
+  }
+}

@@ -1,6 +1,5 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import SignUpModal from './SignUpModal'
 
 export const HomePage = () => {
   return (
@@ -69,7 +68,7 @@ export const HomePage = () => {
               <video src="../videos/dreams.mp4" className="how-it-works__video" autoPlay loop muted preload="auto"></video>
             </div>
           </div>
-          <div className="how-it-works how-it-works--2 u-margin-bottom-medium">
+          <div className="how-it-works how-it-works--2 u-margin-bottom-big">
             <div className="how-it-works__video-container">
               <video src="../videos/dashboard.mp4" className="how-it-works__video" autoPlay loop muted preload="auto"></video>
             </div>
