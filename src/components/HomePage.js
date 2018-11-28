@@ -1,5 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import SignUpModal from './SignUpModal'
 
 export const HomePage = () => {
   return (
@@ -13,7 +14,7 @@ export const HomePage = () => {
               Transform your dream world into a playground of infinite possibility.
             </span>
           </h1>
-          <Link to="/dashboard" className="btn btn--blue">lucidity demo</Link>
+          <Link to="/dashboard" className="btn btn--blue">explore lucidity</Link>
         </div>
       </section>
 
@@ -45,7 +46,7 @@ export const HomePage = () => {
             </div>
           </div>
         </div>
-        <a href="#" className="btn btn--blue">get started</a>
+        
       </section>
 
       <section className="section section--three u-margin-bottom-xxxl">
@@ -110,4 +111,5 @@ export const HomePage = () => {
       </footer>
     </div>
   )
+
 }

@@ -44,3 +44,9 @@
   border-style: solid;
   border-color: $white transparent transparent transparent;
 }
+
+@mixin star-positioning {
+  position: absolute;
+    left: 50%;
+  transform: translateX(-50%);
+}

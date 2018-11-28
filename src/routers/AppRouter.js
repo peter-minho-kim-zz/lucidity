@@ -12,8 +12,11 @@ const AppRouter = () => (
   <BrowserRouter>
     <div className="main-wrapper">
       <div id="stars1"></div>
+      <div id="stars1-2"></div> 
       <div id="stars2"></div>
+      <div id="stars2-2"></div>
       <div id="stars3"></div>
+      <div id="stars3-2"></div>
       <Header />
       <Switch>
         <Route path="/" component={HomePage} exact={true} />

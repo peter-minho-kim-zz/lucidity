@@ -26,7 +26,7 @@ class DreamList extends React.Component {
     setTimeout(() => {
       this.refs.dreamList.classList.remove('fade-in-bottom')
 
-    }, 2000)
+    }, 1500)
   }
   render() {
     return (
