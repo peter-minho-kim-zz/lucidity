@@ -5,7 +5,7 @@
   font-size: $l-font-size;
   padding: 1rem 3rem;
   text-transform: uppercase;
-  transition: color 0.2s ease-in-out;
+  transition: all 0.3s ease-in-out;
 
   &,
   &:link,
@@ -24,6 +24,7 @@
 
     &:hover {
       color: $white;
+      transform: translateY(-1rem);
     }
   }
 }

@@ -48,14 +48,14 @@ export const HomePage = () => {
         <a href="#" className="btn btn--blue">get started</a>
       </section>
 
-      <section className="section section--three">
+      <section className="section section--three u-margin-bottom-xxxl">
         <div className="heading-text-box u-center-text u-margin-bottom-big">
           <h3 className="heading-text-box--tertiary">how it works</h3>
           <h2 className="heading-text-box--secondary u-margin-bottom-medium">how we dream</h2>
           <div className="how-it-works how-it-works--1 u-margin-bottom-medium">
             <div className="how-it-works__text-container">
               <p className="how-it-works__text--pre">
-                Intuitive
+                Intuitive Design
               </p>
               <p className="how-it-works__text--main u-margin-bottom-small">
                 Dream Memoir
@@ -68,7 +68,7 @@ export const HomePage = () => {
               <video src="../videos/dreams.mp4" className="how-it-works__video" autoPlay loop muted preload="auto"></video>
             </div>
           </div>
-          <div className="how-it-works how-it-works--2">
+          <div className="how-it-works how-it-works--2 u-margin-bottom-medium">
             <div className="how-it-works__video-container">
               <video src="../videos/dashboard.mp4" className="how-it-works__video" autoPlay loop muted preload="auto"></video>
             </div>
@@ -84,8 +84,21 @@ export const HomePage = () => {
               </p>
             </div>
           </div>
+          <Link to="/dashboard" className="btn btn--blue">lucidity demo</Link>
         </div>
       </section>
+
+      <footer className="footer u-margin-bottom-big">
+        <div className="footer__contact">
+          <img src="../images/lucidity-brand.png" className="footer__contact__brand" alt="lucidity brand"/>
+          <div className="footer__contact-info">
+            <i class="fas fa-map-marker footer__marker"></i>
+          </div>
+        </div>
+        <div className="footer__social">
+        
+        </div>
+      </footer>
     </div>
   )
 }

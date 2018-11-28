@@ -1,0 +1,17 @@
+.footer {
+  display: flex;
+  margin: 0 auto;
+  width: $grid-width;
+
+  &__marker {
+    color: $light-blue;
+    font-size: $default-font-size;
+  }
+
+  &__contact {
+
+    &__brand {
+      width: 25rem;
+    }
+  }
+}

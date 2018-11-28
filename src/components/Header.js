@@ -3,9 +3,9 @@ import { Link, NavLink } from 'react-router-dom'
 
 const Header = (props) => {
   return (
-    <div className="header-wrapper fade-in-top">
+    <div className="header-wrapper">
       {window.location.pathname === '/' ? 
-        <header className="header">
+        <header className="header fade-in-top">
           <nav className="nav">
             <NavLink to="/" className="nav__link">
               <img src="../images/lucidity-brand.png" className="nav__brand" alt="lucidity brand" />
@@ -17,7 +17,7 @@ const Header = (props) => {
           </nav>
         </header>
         : 
-        <header className="header">
+        <header className="header fade-in-top">
           <nav className="nav">
             <NavLink to="/" className="nav__link">
               <img src="../images/lucidity-brand.png" className="nav__brand" alt="lucidity brand"/>
