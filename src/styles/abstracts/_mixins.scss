@@ -45,8 +45,25 @@
   border-color: $white transparent transparent transparent;
 }
 
-@mixin star-positioning {
-  position: absolute;
-    left: 50%;
-  transform: translateX(-50%);
+// 1800px === 112.5em === 75%
+// 1200px === 75em === 56.25%
+// 900px === 56.25em === 50%
+// 600px === 37.5em === 50%
+
+// MEDIA QUERIES
+@mixin respond-1800-width {
+  @media (min-width: 112.5em) { @content };
 }
+
+@mixin respond-1200-width {
+  @media (max-width: 75em) { @content };
+}
+
+@mixin respond-1050-width {
+  @media (max-width: 65.625em) { @content };
+}
+
+@mixin respond-900-width {
+  @media (max-width: 56.25em) { @content };
+}
+

@@ -2,6 +2,10 @@
   margin: 0 auto;
   position: relative;
   width: 114rem;
+
+  @include respond-1050-width {
+    width: 100%;
+  }
 }
 
 .section--one {
@@ -14,6 +18,10 @@
       left: 50%;
     transform: translate(-50%, -50%);
     width: 100%;
+
+    @include respond-1050-width {
+      padding: 0 2rem;
+    }
 
     .heading-primary--main {
       font-size: $xxxl-font-size;
