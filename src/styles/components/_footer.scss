@@ -2,6 +2,10 @@
   margin: 0 auto;
   width: $grid-width;
 
+  @include respond-1100-width {
+    width: 100%;
+  }
+
   &__brand {
     width: 22rem;
   }

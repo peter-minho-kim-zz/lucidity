@@ -1,6 +1,10 @@
 .beta-form {
   width: 60rem;
 
+  @include respond-650-width {
+    width: 100%;
+  }
+
   &__text {
     font-size: $default-font-size;
   }
@@ -25,6 +29,10 @@
     transition: all .4s;
     width: 30rem;
 
+    @include respond-500-width {
+      width: 100%;
+    }
+
     &::placeholder {
       color: $white;
     }
@@ -33,6 +41,10 @@
       color: $white;
       border-color: $white;
       width: 40rem;
+
+      @include respond-500-width {
+        width: 100%;
+      }
 
       &::placeholder {
         color: $white;

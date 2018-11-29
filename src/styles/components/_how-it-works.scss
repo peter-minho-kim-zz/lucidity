@@ -2,13 +2,33 @@
   display: flex;
   justify-content: space-between;
 
+  &--1 {
+    @include respond-900-width {
+      flex-direction: column;
+    }
+  }
+
+  &--2 {
+    @include respond-900-width {
+      flex-direction: column-reverse;
+    }
+  }
+
   &__text-container {
     padding: 4rem;
     text-align: left;
+
+    @include respond-900-width {
+      text-align: center;
+    }
   }
 
   &__video {
     width: 55rem;
+
+    @include respond-900-width {
+      width: 90%;
+    }
   }
 
   &__text {

@@ -1,6 +1,10 @@
 .heading-text-box {
   text-transform: uppercase;
 
+  @include respond-650-width {
+    padding: 0 2rem;
+  }
+
   &--secondary {
     color: $white;
     font-size: $xl-font-size;

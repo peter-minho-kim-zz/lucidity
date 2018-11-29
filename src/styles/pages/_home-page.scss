@@ -46,6 +46,11 @@
     justify-content: space-around;
     position: relative;
 
+    @include respond-900-width {
+      flex-direction: column;
+      justify-content: center;
+    }
+
     .card {
       background-color: $white;
       border-radius: 3px;
@@ -55,6 +60,11 @@
       text-align: center;
       transition: all 0.5s;
       width: 32rem;
+
+      @include respond-900-width {
+        margin: 0 auto;
+        margin-bottom: 7rem;    
+      }
 
       &:hover {
         transform: translateY(-3rem);

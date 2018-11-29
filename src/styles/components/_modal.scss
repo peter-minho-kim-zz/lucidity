@@ -29,6 +29,10 @@
   padding: 2rem 4rem;
   position: relative;
   text-align: center;
+
+  @include respond-650-width {
+    width: 90%;
+  }
 }
 
 .overlay {

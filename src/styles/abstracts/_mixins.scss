@@ -59,11 +59,23 @@
   @media (max-width: 75em) { @content };
 }
 
+@mixin respond-1100-width {
+  @media (max-width: 68.75em) { @content };
+}
+
 @mixin respond-1050-width {
   @media (max-width: 65.625em) { @content };
 }
 
 @mixin respond-900-width {
   @media (max-width: 56.25em) { @content };
+}
+
+@mixin respond-650-width {
+  @media (max-width: 40.625em) { @content };
+}
+
+@mixin respond-500-width {
+  @media (max-width: 31.25em) { @content };
 }
 
