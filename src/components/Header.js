@@ -39,9 +39,9 @@ class Header extends React.Component {
                 <img src="../images/lucidity-brand.png" className="nav__brand" alt="lucidity brand" />
               </NavLink>
               <div className="nav__main-links">
-                <NavLink to="/dashboard" className="nav__link" activeClassName="is-active">Dashboard</NavLink>
-                <NavLink to="/dreams" className="nav__link" activeClassName="is-active">Dreams</NavLink>
-                <NavLink to="/create" className="nav__link" activeClassName="is-active">New Dream</NavLink>
+                <NavLink to="/dashboard" className="nav__link nav__link-icon" activeClassName="is-active"><i className="fas fa-chart-pie nav__icon"></i><span className="nav__text">Dashboard</span></NavLink>
+                <NavLink to="/dreams" className="nav__link nav__link-icon" activeClassName="is-active"><i className="fas fa-list-ul nav__icon"></i><span className="nav__text">Dreams</span></NavLink>
+                <NavLink to="/create" className="nav__link nav__link-icon" activeClassName="is-active"><i className="fas fa-pencil-alt nav__icon"></i><span className="nav__text">New Dream</span></NavLink>
               </div>
             </nav>
           </header>

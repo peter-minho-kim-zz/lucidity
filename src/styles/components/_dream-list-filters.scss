@@ -3,9 +3,21 @@
   justify-content: space-between;
   animation-delay: .3s;
 
+  @include respond-1010-width {
+    display: block;
+    text-align: center;
+  }
+
+  & > * {
+    @include respond-1010-width {
+      margin: 0 2rem 2rem 2rem;
+    }
+  }
+
   & > *:not(:last-child) {
     margin-right: 3rem;
   }
+
   .text-filter {
     background-color: transparent;
     border: 1px solid $light-gray;
@@ -18,6 +30,11 @@
     padding: $input-padding;
     transition: all .4s;
     width: $input-width;
+
+    @include respond-500-width {
+      margin: 0 0 2rem 0;
+      width: 100%;
+    }
 
     &:focus {
       background-color: rgba($light-blue, .1);
@@ -60,11 +77,17 @@
     -webkit-border-radius: $input-radius;
     color: $light-gray;
     cursor: pointer;
+    font-family: inherit;
     font-size: $m-font-size;
     height: 4.8rem;
     padding: $input-padding;
     transition: all .4s;
     width: $input-width;
+
+    @include respond-500-width {
+      margin: 0 0 2rem 0;
+      width: 100%;
+    }
 
     &:focus {
       background-color: rgba($light-blue, .1);

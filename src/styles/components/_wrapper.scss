@@ -8,4 +8,9 @@
   padding-top: 13rem;
   margin: 0 auto;
   width: $grid-width;
+
+  @include respond-1100-width {
+    padding: 13rem 3rem;
+    width: 100%;
+  }
 }

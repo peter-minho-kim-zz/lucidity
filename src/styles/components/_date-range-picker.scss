@@ -6,19 +6,47 @@
 
 .DateInput__display-text {
   transition: all .4s !important;
+
+  @include respond-1200-width {
+    padding: 2px 8px !important;
+  }
 }
 
 .DateRangePicker {
-  height: 4.8rem !important;
+  @media (max-width: 45.5em) {
+    bottom: 2.5px;
+  }
+
+  @include respond-500-width {
+    margin: 0 0 2rem 0 !important;
+    width: 100% !important;
+  }
 }
 
 .DateRangePickerInput {
   border-color: $light-gray !important; 
   border-radius: $input-radius !important;
+  height: 4.8rem !important;
+
+  @include respond-500-width {
+    width: 100% !important;
+  }
+
+  @media (max-width: 48.6875em) {
+    height: auto !important;
+  }
+}
+
+.DateRangePickerInput__arrow {
+  @media (max-width: 21.25em) {
+    display: block !important;
+    transform: rotate(90deg) !important;
+  }
 }
 
 .DateInput {
   color: $light-gray !important;
+  font-size: $m-font-size !important;
   padding: 7px !important;
 }
 
@@ -66,4 +94,14 @@
 
 .DateInput__display-text--has-input {
   color: $light-blue !important;
+}
+
+.DateRangePickerInput > div:nth-child(3) {
+  @media (max-width: 21.25em) {
+    margin-left: 5rem !important;
+  }
+}
+
+.DateRangePickerInput__clear-dates--hide {
+  visibility: visible !important;
 }

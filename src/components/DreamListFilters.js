@@ -39,8 +39,8 @@ export class DreamListFilters extends React.Component {
           onChange={this.onSortChange}
           className="select"
         >
-          <option value="date">Date</option>
-          <option value="hoursSlept">Hours Slept</option>
+          <option value="date">Sort by Date</option>
+          <option value="hoursSlept">Sort by Hours</option>
         </select>
         <select
           value={this.props.filters.dreamFilter}

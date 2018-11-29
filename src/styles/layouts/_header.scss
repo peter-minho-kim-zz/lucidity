@@ -25,15 +25,33 @@
       transform: translateY(-50%);
     }
 
+    &__icon {
+      margin-right: 1rem;
+
+      @include respond-500-width {
+        margin: 0;
+      }
+    }
+
+    &__text {
+      @include respond-500-width {
+        display: none;
+      }
+    }
+
     &__link {
       &,
       &:link,
       &:visited {
-        border-bottom: 1px solid transparent;
+        border: 1px solid transparent;
         color: $white;
         padding-bottom: .5rem;
         text-decoration: none;
         transition: all .2s;
+
+        @include respond-500-width {
+          padding: 1rem 1.2rem;
+        }
       }
 
       &:hover {
@@ -45,12 +63,34 @@
       .nav__link:not(:last-child) {
         margin-right: 3rem;
 
+        @include respond-500-width {
+          margin: 0;
+        }
       }
     }
 
+    &__link-icon {
+      &,
+      &:link,
+      &:visited {
+        @include respond-500-width {
+          border: 1px solid $white;
+          border-radius: 50%;
+          &:not(:last-child) {
+            margin-right: 1rem !important;
+          }
+        }
+      }
+        
+    }
+
     .is-active {
-      border-color: $light-blue;
+      border-bottom-color: $light-blue;
       color: $light-blue;
+
+      @include respond-500-width {
+        border-color: $light-blue;
+      }
     }
   }
 }

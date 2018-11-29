@@ -2,12 +2,26 @@
   display: flex;
   justify-content: space-between;
   margin: 0 auto;
+  padding: 3rem;
+
+  @include respond-900-width {
+    flex-direction: column;
+  }
 }
 
 .chart--doughnut-container {
   width: 50%;
+
+  @include respond-900-width {
+    padding: 3rem;
+    width: 100%;
+  }
 }
 
 .chart--line-container {
   width: 50%;
+
+  @include respond-900-width {
+    width: 100%;
+  }
 }

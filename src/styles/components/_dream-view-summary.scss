@@ -1,8 +1,9 @@
 .dream-view-summary {
-  // background: linear-gradient(to bottom right, $light-blue 0%, $dark-blue 100%);
-  // border-radius: $input-radius;
-  // padding: 1.5rem 2rem;
   color: $white;
+
+  @include respond-1010-width {
+    text-align: center;
+  }
 
   &__text {
     font-size: $lr-font-size;

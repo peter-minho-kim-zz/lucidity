@@ -97,7 +97,6 @@ export const HomePage = () => {
           <div className="footer__social-media u-margin-bottom-small ">
             <a href="https://github.com/peter-minho-kim" target="_blank"><i className="fab fa-github"></i></a>
             <a href="https://www.linkedin.com/in/peter-kim-developer/" target="_blank"><i className="fab fa-linkedin"></i></a>
-            <a href="https://www.instagram.com/peter_minho_kim/" target="_blank"><i className="fab fa-instagram"></i></a>
           </div>
           <div className="copyright-text">
             <p>
