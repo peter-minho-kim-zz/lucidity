@@ -17,7 +17,7 @@
     bottom: 2.5px;
   }
 
-  @include respond-500-width {
+  @media (max-width: 41.5625em) {
     margin: 0 0 2rem 0 !important;
     width: 100% !important;
   }
@@ -28,7 +28,8 @@
   border-radius: $input-radius !important;
   height: 4.8rem !important;
 
-  @include respond-500-width {
+  @media (max-width: 41.5625em) {
+    margin: 0 0 2rem 0 !important;
     width: 100% !important;
   }
 

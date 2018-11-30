@@ -31,7 +31,7 @@
     transition: all .4s;
     width: $input-width;
 
-    @include respond-500-width {
+    @media (max-width: 41.5625em) {
       margin: 0 0 2rem 0;
       width: 100%;
     }
@@ -84,7 +84,7 @@
     transition: all .4s;
     width: $input-width;
 
-    @include respond-500-width {
+    @media (max-width: 41.5625em) {
       margin: 0 0 2rem 0;
       width: 100%;
     }

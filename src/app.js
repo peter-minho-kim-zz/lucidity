@@ -11,8 +11,8 @@ import 'react-dates/lib/css/_datepicker.css'
 import './firebase/firebase'
 
 const store = configureStore()
-
 const now = moment.now()
+
 store.dispatch(addDream({
   title: 'Down the Rabbit Hole',
   entry: 'Alice sits drowsily by a riverbank, bored by the book her older sister reads to her. Out of nowhere, a White Rabbit runs past her, fretting that he will be late. The Rabbit pulls a watch out of his waistcoat pocket and runs across the field and down a hole. Alice impulsively follows the Rabbit and tumbles down the deep hole that resembles a well, falling slowly for a long time. As she floats down, she notices that the sides of the well are covered with cupboards and shelves.',
