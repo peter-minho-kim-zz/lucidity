@@ -65,12 +65,20 @@ export const HomePage = () => {
               </p>
             </div>
             <div className="how-it-works__video-container">
-              <video src="../videos/dreams.mp4" className="how-it-works__video" autoPlay loop muted preload="auto"></video>
+              {/Mobi|Android/i.test(navigator.userAgent) ?
+                <img src="../images/dreams.gif" alt="dream list example" />
+                :
+                <video src="../videos/dreams.mp4" className="how-it-works__video" autoPlay loop muted preload="auto"></video>
+              }
             </div>
           </div>
           <div className="how-it-works how-it-works--2 u-margin-bottom-big">
             <div className="how-it-works__video-container">
-              <video src="../videos/dashboard.mp4" className="how-it-works__video" autoPlay loop muted preload="auto"></video>
+              {/Mobi|Android/i.test(navigator.userAgent) ? 
+                <img src="../images/dashboard.gif" alt="dashboard example" /> 
+                : 
+                <video src="../videos/dashboard.mp4" className="how-it-works__video" autoPlay loop muted preload="auto"></video>
+              }
             </div>
             <div className="how-it-works__text-container">
               <p className="how-it-works__text--pre">

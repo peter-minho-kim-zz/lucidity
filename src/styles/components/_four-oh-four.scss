@@ -1,0 +1,19 @@
+.four-oh-four-page {
+  height: 300vh;
+  text-align: center;
+}
+
+.four-oh-four {
+  background-image: linear-gradient(to bottom right, $light-blue, $light-pink);
+  -webkit-background-clip: text;
+  color: transparent;
+  font-size: 10rem;
+}
+
+.four-oh-four-p {
+  background-image: linear-gradient(to bottom right, $light-blue, $light-pink);
+  -webkit-background-clip: text;
+  color: transparent;
+  font-size: 5rem;
+  text-transform: uppercase;
+}
