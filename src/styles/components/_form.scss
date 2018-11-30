@@ -8,13 +8,19 @@
   display: grid;
   grid-gap: 2rem;
   grid-template-columns: repeat(8, 1fr);
-  grid-template-rows: repeat(10, 1fr);
+  grid-template-rows: repeat(12, 1fr);
 
   &__title-input {
     @include input-idle;
+    font-family: inherit;
     grid-column: 1 / 6;
     grid-row: 1 / 2;
     padding: 0 2rem;
+
+    @include respond-750-width {
+      grid-column: 1 / -1;
+      // height: 7rem;
+    }
 
     &::placeholder {
       color: $light-gray;
@@ -31,10 +37,15 @@
 
   &__entry-text-area {
     @include input-idle;
+    font-family: inherit;
     grid-column: 1 / 7;
     grid-row: 2 / 6;
     padding: 2rem;
     resize: none;
+
+    @include respond-750-width {
+      grid-column: 1 / -1;
+    }
 
     &::placeholder {
       color: $light-gray;
@@ -52,13 +63,25 @@
   .SingleDatePicker {
     grid-column: 7 / 9;
     text-align: center;
+
+    @include respond-750-width {
+      grid-column: 1 / -1;
+      grid-row: 7 / 8;
+    }
   }
 
   &__hours-slept-input {
     @include input-idle;
-    grid-column: 6 / 7;
-    grid-row: 1 / 2;
+    font-family: inherit;
+    grid-column: 7 / 9;
+    grid-row: 2 / 3;
     text-align: center;
+
+    @include respond-750-width {
+      grid-column: 1 / -1;
+      grid-row: 8 / 9;
+      height: 77px;
+    }
 
     &::placeholder {
       color: $light-gray;
@@ -74,8 +97,9 @@
   }
 
   &__dream-type-select {
-    grid-column: 7 / 9;
-    grid-row: 2 / 3;
+    font-family: inherit;
+    grid-column: 6 / 7;
+    grid-row: 1 / 2;
     background-color: transparent;
     border: 1px solid $light-gray;
     -webkit-appearance: none;
@@ -83,10 +107,15 @@
     color: $light-gray;
     cursor: pointer;
     font-size: $m-font-size;
-    height: 4.8rem;
+    font-family: inherit;
     padding: $input-padding;
     text-align: center;
     transition: all .4s;
+
+    @include respond-750-width {
+      grid-column: 1 / -1;
+      grid-row: 6 / 7;
+    }
 
     &:focus {
       background-color: rgba($light-blue, .1);
@@ -101,9 +130,21 @@
     display: flex;
     justify-content: space-around;
     grid-column: 7 / 9;
+    position: relative;
+      top: 3rem;
+    
+    @include respond-750-width {
+      grid-column: 1 / -1;
+      justify-content: center;
+      top: 0;
+    }
 
     &__img {
       width: 8.2rem; 
+
+      @include respond-750-width {
+        margin-right: 2rem;
+      }
     }
 
     &__value-container {
@@ -124,7 +165,15 @@
   &__lucidity-level-slider__container {
     grid-column: 7 / 9;
     grid-row: 4 / 5;
+    position: relative;
+      top: 3rem;
     text-align: center;
+    
+    @include respond-750-width {
+      grid-column: 1 / -1;
+      grid-row: 10 / 11;
+      top: 0;
+    }
   }
 
   &__lucidity-level-slider {
@@ -188,6 +237,11 @@
   &__button {
     grid-column: 7 / 9;
     grid-row: 5 / 6;
+
+    @include respond-750-width {
+      grid-column: 1 / -1;
+      grid-row: 11 / 12;
+    }
   }
 }
 
@@ -197,6 +251,6 @@
   border: 1px solid $light-blue !important;
   border-radius: 5px !important;
   display: flex;
-  height: 6.5rem !important;
+  height: 8.6rem !important;
   justify-content: space-around;
 }

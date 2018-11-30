@@ -3,14 +3,19 @@
   overflow: hidden;
 }
 
+.buffer-wrapper {
+  padding-bottom: 100%;
+}
+
 .wrapper {
-  height: 150vh;
   padding-top: 13rem;
+  padding-bottom: 100%;
   margin: 0 auto;
   width: $grid-width;
 
   @include respond-1100-width {
-    padding: 13rem 3rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
     width: 100%;
   }
 }

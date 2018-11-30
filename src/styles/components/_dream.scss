@@ -44,6 +44,11 @@
     padding: 4px 12px;
     background: linear-gradient(to bottom, lighten($light-purple, 30%) 0%, darken($light-purple, 15%) 100%);
     border-radius: 10px;
+
+    @include respond-550-width {
+      text-align: center;
+      width: 100%;
+    }
   }
 
   &__clock,
@@ -61,10 +66,31 @@
       justify-content: space-between;
       width: 100%;
     }
+
+    @include respond-550-width {
+      flex-wrap: wrap;
+    }
   }
 
   &__info-container > div {
     width: 15rem;
+
+    @media (max-width: 30.9375em) {
+      width: auto;
+    }
+  }
+
+  &__info-container > div:first-child {
+    @include respond-550-width {
+      width: 100%;
+    }
+  }
+
+  &__info-box {
+    @include respond-550-width {
+      margin-bottom: 1.5rem;
+      text-align: center;
+    }
   }
 
   &__body {

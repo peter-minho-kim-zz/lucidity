@@ -79,11 +79,18 @@
   @media (max-width: 53.125em) { @content };
 }
 
+@mixin respond-750-width {
+  @media (max-width: 46.875em) { @content };
+}
+
 @mixin respond-650-width {
   @media (max-width: 40.625em) { @content };
+}
+
+@mixin respond-550-width {
+  @media (max-width: 34.375em) { @content };
 }
 
 @mixin respond-500-width {
   @media (max-width: 31.25em) { @content };
 }
-

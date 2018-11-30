@@ -14,12 +14,14 @@ class EditDreamPage extends React.Component {
   }
   render() {
     return (
-      <div className="wrapper">
-        <DreamForm
-          dream={this.props.dream}
-          onSubmit={this.onSubmit}
-        />
-        <button onClick={this.onRemove}>Remove</button>
+      <div className="buffer-wrapper">
+        <div className="wrapper">
+          <DreamForm
+            dream={this.props.dream}
+            onSubmit={this.onSubmit}
+          />
+          <button onClick={this.onRemove}>Remove</button>
+        </div>
       </div>
     )
   }

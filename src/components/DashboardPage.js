@@ -3,9 +3,11 @@ import Charts from './Charts'
 import Stats from './Stats'
 
 const DashboardPage = () => (
-  <div className="wrapper">
-    <Stats />
-    <Charts />
+  <div className="buffer-wrapper">
+    <div className="wrapper">
+      <Stats />
+      <Charts />
+    </div>
   </div>
 )
 

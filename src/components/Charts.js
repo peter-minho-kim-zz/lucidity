@@ -82,7 +82,7 @@ class Charts extends React.Component {
           duration: 2600,
           easing: 'easeOutCubic'
         },
-        cutoutPercentage: 75,
+        cutoutPercentage: 80,
         legend: {
           labels: {
             fontColor: 'white',

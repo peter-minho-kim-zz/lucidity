@@ -4,10 +4,12 @@ import DreamListFilters from './DreamListFilters'
 import DreamViewSummary from './DreamViewSummary'
 
 const DreamsPage = () => (
-  <div className="wrapper">
-    <DreamViewSummary />
-    <DreamListFilters />
-    <DreamList />
+  <div className="buffer-wrapper">
+    <div className="wrapper">
+      <DreamViewSummary />
+      <DreamListFilters />
+      <DreamList />
+    </div>
   </div>
 )
 
