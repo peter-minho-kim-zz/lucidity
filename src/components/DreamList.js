@@ -18,7 +18,7 @@ class DreamList extends React.Component {
       <div className="dream-list fade-in-bottom" ref="dreamList">
         {
           this.props.dreams.length === 0 ? (
-            <p>No dreams</p>
+            <p className="form__error">No dreams</p>
           ) : (
               this.props.dreams.map((dream) => {
                 return <DreamListItem key={dream.id} {...dream} />
