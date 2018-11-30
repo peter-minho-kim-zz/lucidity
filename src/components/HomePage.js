@@ -13,7 +13,18 @@ export const HomePage = () => {
               Transform your dream world into a playground of infinite possibility.
             </span>
           </h1>
-          <Link to="/dashboard" className="btn btn--blue">explore lucidity</Link>
+          <Link 
+            to="/dashboard" 
+            className="btn btn--blue" 
+            onClick={() => {
+              window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+              })
+            }}
+          >
+          explore lucidity
+          </Link>
         </div>
       </section>
 
@@ -52,7 +63,7 @@ export const HomePage = () => {
         <div className="heading-text-box u-center-text u-margin-bottom-big">
           <h3 className="heading-text-box--tertiary">how it works</h3>
           <h2 className="heading-text-box--secondary u-margin-bottom-medium">how we dream</h2>
-          <div className="how-it-works how-it-works--1 u-margin-bottom-medium">
+          <div className="how-it-works how-it-works--1 u-margin-bottom-big">
             <div className="how-it-works__text-container">
               <p className="how-it-works__text--pre">
                 Intuitive Design
@@ -92,7 +103,18 @@ export const HomePage = () => {
               </p>
             </div>
           </div>
-          <Link to="/dashboard" className="btn btn--blue">lucidity demo</Link>
+          <Link 
+            to="/dashboard" 
+            className="btn btn--blue" 
+            onClick={() => {
+              window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+              })
+            }}
+          >
+          lucidity demo
+          </Link>
         </div>
       </section>
 
