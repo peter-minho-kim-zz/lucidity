@@ -72,6 +72,15 @@
     }
   }
 
+  &__info-container > div:first-child {
+    position: relative;
+      right: 4rem;
+
+    @include respond-850-width {
+      position: static;
+    }
+  }
+
   &__info-container > div {
     width: 15rem;
 
