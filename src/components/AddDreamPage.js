@@ -10,12 +10,10 @@ export class AddDreamPage extends React.Component {
   }
   render() {
     return (
-      <div className="buffer-wrapper">
-        <div className="wrapper">
-          <DreamForm
-            onSubmit={this.onSubmit}
-          />
-        </div>
+      <div className="wrapper">
+        <DreamForm
+          onSubmit={this.onSubmit}
+        />
       </div>
     )
   }
