@@ -46,7 +46,6 @@
     border-radius: 10px;
 
     @include respond-550-width {
-      text-align: center;
       width: 100%;
     }
   }
@@ -60,10 +59,10 @@
   &__info-container {
     align-items: center;
     display: flex;
+    justify-content: space-between;
     width: 57rem;
 
     @include respond-850-width {
-      justify-content: space-between;
       width: 100%;
     }
 
@@ -73,12 +72,14 @@
   }
 
   &__info-container > div:first-child {
-    position: relative;
-      right: 4rem;
 
-    @include respond-850-width {
-      position: static;
+    @include respond-550-width {
+      width: 100%;
     }
+  }
+
+  &__info-container > div:nth-child(2), &__info-container > div:nth-child(3) {
+    width: 10rem;
   }
 
   &__info-container > div {
@@ -87,15 +88,19 @@
     @media (max-width: 30.9375em) {
       width: auto;
     }
-  }
 
-  &__info-container > div:first-child {
-    @include respond-550-width {
-      width: 100%;
+    @media (max-width: 23.625em) {
+      text-align: center;
+    }
+
+    &:last-child {
+      @media (max-width: 23.625em) {
+        width: 100%;
+      }
     }
   }
 
-  &__info-box {
+  &__info-box:first-child {
     @include respond-550-width {
       margin-bottom: 1.5rem;
       text-align: center;

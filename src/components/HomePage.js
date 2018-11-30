@@ -77,7 +77,7 @@ export const HomePage = () => {
             </div>
             <div className="how-it-works__video-container">
               {/Mobi|Android/i.test(navigator.userAgent) ?
-                <img src="../images/dreams.gif" alt="dream list example" />
+                <img src="../images/dreams.gif" className="how-it-works__video" alt="dream list example" />
                 :
                 <video src="../videos/dreams.mp4" className="how-it-works__video" autoPlay loop muted preload="auto"></video>
               }
@@ -86,7 +86,7 @@ export const HomePage = () => {
           <div className="how-it-works how-it-works--2 u-margin-bottom-big">
             <div className="how-it-works__video-container">
               {/Mobi|Android/i.test(navigator.userAgent) ? 
-                <img src="../images/dashboard.gif" alt="dashboard example" /> 
+                <img src="../images/dashboard.gif" className="how-it-works__video" alt="dashboard example" /> 
                 : 
                 <video src="../videos/dashboard.mp4" className="how-it-works__video" autoPlay loop muted preload="auto"></video>
               }

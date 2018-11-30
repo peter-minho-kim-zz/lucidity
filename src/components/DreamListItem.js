@@ -39,7 +39,7 @@ class DreamListItem extends React.Component {
           </div>
           <div className="dream__info-container">
             <div className="dream__info-box">
-              <span className="dream__type dream-type__tooltip">
+              {<span className="dream__type">
                 {(() => {
                   const dreamTypeSplit = this.props.dreamType.split('')
                   const dreamTypeEdit = dreamTypeSplit.map((letter, index) => {
@@ -51,21 +51,18 @@ class DreamListItem extends React.Component {
                   })
                   return dreamTypeEdit.join('')
                 })()}
-                <span className="tooltiptext">Dream Type</span>
-              </span>
+              </span>}
             </div>
             <div className="dream__info-box">
-              <span className="dream__lucidity-level lucidity-level__tooltip">
+              <span className="dream__lucidity-level">
                 <i className="fas fa-signal dream__level"></i>
                 {this.props.lucidityLevel}
-                <span className="tooltiptext">Lucidity Level</span>
               </span>
             </div>
             <div className="dream__info-box">
-              <span className="dream__hours hours-slept__tooltip">
+              <span className="dream__hours">
                 <i className="far fa-clock dream__clock"></i>
                 {this.props.hoursSlept}
-                <span className="tooltiptext">Hours Slept</span>
               </span>
             </div>
             <div className="dream__info-box">

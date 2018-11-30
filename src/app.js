@@ -103,23 +103,23 @@ store.dispatch(addDream({
   lucidityLevel: 2
 }))
 
-// store.dispatch(addDream({
-//   title: 'Who Stole the Tarts?',
-//   entry: 'Alice arrives in the courtroom and finds the King and Queen of Hearts on their thrones, surrounded by a large crowd of animals and the whole deck of cards. The Knave lies chained before them. Alice surveys the room and takes great pleasure in identifying the various features of a court of law that she has read about.',
-//   hoursSlept: 9,
-//   dreamType: 'lucid',
-//   createdAt: moment(now).subtract(20, 'days'),
-//   lucidityLevel: 3
-// }))
+store.dispatch(addDream({
+  title: 'Who Stole the Tarts?',
+  entry: 'Alice arrives in the courtroom and finds the King and Queen of Hearts on their thrones, surrounded by a large crowd of animals and the whole deck of cards. The Knave lies chained before them. Alice surveys the room and takes great pleasure in identifying the various features of a court of law that she has read about.',
+  hoursSlept: 9,
+  dreamType: 'lucid',
+  createdAt: moment(now).subtract(20, 'days'),
+  lucidityLevel: 3
+}))
 
-// store.dispatch(addDream({
-//   title: 'Alice’s Evidence',
-//   entry: 'Alice jumps to the White Rabbit’s call to the stand. She forgets that she has grown larger and knocks over the jury stand, then scrambles to put all of the jurors back. Alice claims to know “nothing whatever” about the tarts, which the King deems “very important.” The White Rabbit corrects the King, suggesting that he in fact means “unimportant.” The King agrees, muttering the words “important” and “unimportant” to himself.',
-//   hoursSlept: 10,
-//   dreamType: 'nightmare',
-//   createdAt: moment(now).subtract(22, 'days'),
-//   lucidityLevel: 3
-// }))
+store.dispatch(addDream({
+  title: 'Alice’s Evidence',
+  entry: 'Alice jumps to the White Rabbit’s call to the stand. She forgets that she has grown larger and knocks over the jury stand, then scrambles to put all of the jurors back. Alice claims to know “nothing whatever” about the tarts, which the King deems “very important.” The White Rabbit corrects the King, suggesting that he in fact means “unimportant.” The King agrees, muttering the words “important” and “unimportant” to himself.',
+  hoursSlept: 10,
+  dreamType: 'nightmare',
+  createdAt: moment(now).subtract(22, 'days'),
+  lucidityLevel: 3
+}))
 
 const jsx = (
   <Provider store={store}>
