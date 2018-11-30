@@ -10,6 +10,11 @@
   grid-template-columns: repeat(8, 1fr);
   grid-template-rows: repeat(12, 1fr);
 
+  &__error {
+    color: $light-pink;
+    font-size: $default-font-size;
+  }
+
   &__title-input {
     @include input-idle;
     font-family: inherit;
@@ -19,7 +24,6 @@
 
     @include respond-750-width {
       grid-column: 1 / -1;
-      // height: 7rem;
     }
 
     &::placeholder {

@@ -106,7 +106,7 @@ class DreamForm extends React.Component {
     return (
       <div className="form-container fade-in-bottom">
         <h2 className="form-header u-margin-bottom-small">{this.state.formHeading}</h2>
-        {this.state.error && <p>{this.state.error}</p>}
+        {this.state.error && <p className="form__error">{this.state.error}</p>}
         <form onSubmit={this.onSubmit} className="form">
           <input 
             type="text" 

@@ -29,6 +29,10 @@
       background-image: linear-gradient(to bottom right, $light-blue, $light-pink);
       -webkit-background-clip: text;
       color: transparent;
+
+      @media (max-width: 25.375em) {
+        font-size: $xl-font-size;
+      }
     }
 
     span {

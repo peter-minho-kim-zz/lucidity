@@ -105,6 +105,4 @@ const mapStateToProps = (state, props) => ({
 
 })
 
-
-// export default DreamListItem
 export default connect(mapStateToProps, mapDispatchToProps)(DreamListItem)
