@@ -14,10 +14,6 @@ class EditDreamPage extends React.Component {
     this.props.editDream(this.props.dream.id, dream)
     this.props.history.push('/dreams')
   }
-  onRemove = () => {
-    this.props.removeDream(this.props.dream)
-    this.props.history.push('/dreams')
-  }
   render() {
     return (
       <div className="wrapper" ref="wrapper">
@@ -25,7 +21,6 @@ class EditDreamPage extends React.Component {
           dream={this.props.dream}
           onSubmit={this.onSubmit}
         />
-        <button onClick={this.onRemove}>Remove</button>
       </div>
     )
   }
@@ -37,8 +32,7 @@ const mapStateToProps = (state, props) => ({
 })
 
 const mapDispatchToProps = (dispatch, props) => ({
-  editDream: (id, dream) => dispatch(editDream(id, dream)),
-  removeDream: (dream) => dispatch(removeDream(dream))
+  editDream: (id, dream) => dispatch(editDream(id, dream))
 })
 
 export default connect(mapStateToProps, mapDispatchToProps)(EditDreamPage)

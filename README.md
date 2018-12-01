@@ -1,4 +1,5 @@
 # Lucidity
+<img src="./public/images/home.png" alt="Lucidity Home Page">
 ### Introduction
 Lucidity is an experimental React application that allows users to document their dreams and track sleeping patterns with statistical data with the intention of helping users become lucid dreamers. *(A lucid dream is a dream during which the dreamer is aware of dreaming. During this event, the dreamer may be able to exert some degree of control over the characters, narrative, and environment.)*
 
