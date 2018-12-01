@@ -1,11 +1,18 @@
 # Lucidity
-![Lucidity Home Page](./public/images/home.png)
 
 ### Introduction
 Lucidity is an experimental React application that allows users to document their dreams and track sleeping patterns with statistical data with the intention of helping users become lucid dreamers. *(A lucid dream is a dream during which the dreamer is aware of dreaming. During this event, the dreamer may be able to exert some degree of control over the characters, narrative, and environment.)*
 
+![Lucidity Home Page](./public/images/home.png)
+
 ### How it Works
 The key to lucid dreaming is to consistently document one's dreams so that patterns are easily recognized while dreaming. Lucidity provides users with a quick and simple interface that helps them keep track of what they're dreaming about and provides interactive charts and personalized statistics to help measure progress.
+
+![Lucidity Dashboard Page](./public/images/dashboard.png)
+
+![Lucidity Dreams Page](./public/images/dreams.png)
+
+![Lucidity Add Dream Page](./public/images/add-dream.png)
 
 ## Getting Started
 ### Installing
