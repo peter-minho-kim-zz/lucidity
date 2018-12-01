@@ -1,12 +1,13 @@
 import React from 'react'
 import { connect } from 'react-redux'
-import { Line, Doughnut, Pie } from 'react-chartjs-2'
+import { Line, Doughnut } from 'react-chartjs-2'
 import moment from 'moment'
 
 class Charts extends React.Component {
   constructor(props) {
     super(props)
     this.state = {
+      // Chart configurations
       sleepTimeChartData: {
         labels: this.props.dreams.map((dream) => moment(dream.createdAt).format('MMM D')).reverse(),
         datasets: [
@@ -108,6 +109,7 @@ class Charts extends React.Component {
     }
   }
   componentWillMount() {
+    // Pull chart data
     const dreamData = this.state.dreamTypeChartData.datasets[0].data
     const dreamTypes = this.state.dreamTypeChartTotals
     dreamData.push(dreamTypes.normal.length, dreamTypes.lucid.length, dreamTypes.nightmare.length)

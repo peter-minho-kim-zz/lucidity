@@ -76,6 +76,7 @@ export const HomePage = () => {
               </p>
             </div>
             <div className="how-it-works__video-container">
+              {/* Check user device to conditionally render video or gif */}
               {/Mobi|Android/i.test(navigator.userAgent) ?
                 <img src="../images/dreams.gif" className="how-it-works__video" alt="dream list example" />
                 :
@@ -85,6 +86,7 @@ export const HomePage = () => {
           </div>
           <div className="how-it-works how-it-works--2 u-margin-bottom-big">
             <div className="how-it-works__video-container">
+              {/* Check user device to conditionally render video or gif */}
               {/Mobi|Android/i.test(navigator.userAgent) ? 
                 <img src="../images/dashboard.gif" className="how-it-works__video" alt="dashboard example" /> 
                 : 

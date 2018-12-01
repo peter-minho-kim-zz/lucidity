@@ -5,6 +5,7 @@ import SignUpModal from './SignUpModal'
 class Header extends React.Component {
   constructor() {
     super()
+    // Config for sign up modal
     this.state = {
       showModal: false
     }
@@ -18,6 +19,7 @@ class Header extends React.Component {
     this.setState({ showModal: false })
   }
   render() {
+    // Return different navigation between home page and demo
     return (
       <div className="header-wrapper">
         {window.location.pathname === '/' ?

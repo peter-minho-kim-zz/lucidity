@@ -14,37 +14,6 @@
   color: $light-blue;
 }
 
-@mixin tooltip {
-  position: relative;
-  display: inline-block;
-  transition: all .4s;
-}
-
-@mixin tooltiptext {
-  opacity: 0;
-  width: 120px;
-  background-color: $white;
-  color: $dark-purple;
-  text-align: center;
-  border-radius: 6px;
-  padding: 5px 0;
-  position: absolute;
-  z-index: 1;
-  bottom: 150%;
-  transition: all .4s;
-}
-
-@mixin tooltiptext-after {
-  content: "";
-  position: absolute;
-  top: 100%;
-  left: 50%;
-  margin-left: -5px;
-  border-width: 5px;
-  border-style: solid;
-  border-color: $white transparent transparent transparent;
-}
-
 // 1800px === 112.5em === 75%
 // 1200px === 75em === 56.25%
 // 900px === 56.25em === 50%

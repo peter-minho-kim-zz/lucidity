@@ -7,6 +7,7 @@ class DashboardPage extends React.Component {
     super(props)
   }
   componentDidMount() {
+    // This fixes the bottom spacing issue that the moving stars background causes
     this.refs.wrapper.style.minHeight = window.innerHeight + 'px'
   }
   render() {

@@ -8,17 +8,20 @@ class DreamListItem extends React.Component {
   constructor(props) {
     super(props)
   }
+  // Removes 'edit dream' and 'delete dream' hover tooltip
   onRemove = () => {
     this.refs.dream.classList.add('disappear')
     setTimeout(() => {
       this.props.removeDream(this.props)
     }, 400)
   }
+  // Opens dream body on click
   openDream = () => {
     const dreamBody = this.refs.dreamBody
     dreamBody.style.maxHeight ? 
       dreamBody.style.maxHeight = null : dreamBody.style.maxHeight = dreamBody.scrollHeight + 'px'
   }
+  // Makes 'edit dream' and 'delete dream' hover tooltip appear
   setEditText = () => {
     this.refs.option.textContent = 'Edit Dream'
     this.refs.option.classList.add('appear')
@@ -97,12 +100,8 @@ class DreamListItem extends React.Component {
   }
 }
 
-const mapDispatchToProps = (dispatch, props) => ({
+const mapDispatchToProps = (dispatch) => ({
   removeDream: (dream) => dispatch(removeDream(dream))
 })
 
-const mapStateToProps = (state, props) => ({
-
-})
-
-export default connect(mapStateToProps, mapDispatchToProps)(DreamListItem)
+export default connect(undefined, mapDispatchToProps)(DreamListItem)

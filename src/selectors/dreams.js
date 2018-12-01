@@ -1,6 +1,6 @@
 import moment from 'moment'
 
-// Get visible dreams
+// Get visible dreams based on sorting
 const getVisibleDreams = (dreams, { text, sortBy, dreamFilter, startDate, endDate }) => {
   return dreams.filter((dream) => {
     const createdAtMoment = moment(dream.createdAt)

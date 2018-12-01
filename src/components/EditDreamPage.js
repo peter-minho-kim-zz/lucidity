@@ -1,13 +1,14 @@
 import React from 'react'
 import { connect } from 'react-redux'
 import DreamForm from './DreamForm'
-import { editDream, removeDream } from '../actions/dreams'
+import { editDream } from '../actions/dreams'
 
 class EditDreamPage extends React.Component {
   constructor(props) {
     super(props)
   }
   componentDidMount() {
+    // This fixes the bottom spacing issue that the moving stars background causes
     this.refs.wrapper.style.minHeight = window.innerHeight + 'px'
   }
   onSubmit = (dream) => {
@@ -31,7 +32,7 @@ const mapStateToProps = (state, props) => ({
   dream: state.dreams.find((dream) => dream.id === props.match.params.id)
 })
 
-const mapDispatchToProps = (dispatch, props) => ({
+const mapDispatchToProps = (dispatch) => ({
   editDream: (id, dream) => dispatch(editDream(id, dream))
 })
 

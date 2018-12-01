@@ -4,6 +4,7 @@ import getVisibleDreams from '../selectors/dreams'
 import hoursSleptTotal from '../selectors/hoursSlept-total'
 
 const DreamViewSummary = ({ dreamCount, hoursSleptTotal }) => {
+  // Set plural wording for dream list viewer
   const dreamCountWord = dreamCount === 1 ? 'dream' : 'dreams'
   const hoursSleptWord = hoursSleptTotal === 1 ? 'hour' : 'hours'
   return (

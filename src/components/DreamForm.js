@@ -6,6 +6,7 @@ class DreamForm extends React.Component {
   constructor(props) {
     super(props)
 
+    // Figure out if we're editing or adding a dream by checking if a dream exists
     this.state = {
       title: props.dream ? props.dream.title : '',
       entry: props.dream ? props.dream.entry : '',
@@ -20,6 +21,7 @@ class DreamForm extends React.Component {
       imgUrl: props.dream ? `../images/lucidity-level-${props.dream.lucidityLevel}.png` : '../images/lucidity-level-0.png'
     }
   }
+  // Control user input and set state
   onTitleChange = (e) => {
     const title = e.target.value
     this.setState(() => ({ title }))
@@ -43,6 +45,7 @@ class DreamForm extends React.Component {
       this.setState(() => ({ createdAt }))
     }
   }
+  // Change lucidity level image based on slider input
   onSliderChange = (e) => {
     const lucidityLevel = e.target.value
     this.setState(() => ({ lucidityLevel }))
@@ -100,6 +103,7 @@ class DreamForm extends React.Component {
     }
   }
   componentWillMount() {
+    // Change form button text based on whether adding or editing a dream
     !!this.state.title === false ? this.state.buttonText = 'Add Dream' : this.state.buttonText = 'Edit Dream' 
   }
   render() {
