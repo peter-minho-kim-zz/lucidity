@@ -4,6 +4,12 @@ import DreamForm from './DreamForm'
 import { editDream, removeDream } from '../actions/dreams'
 
 class EditDreamPage extends React.Component {
+  constructor(props) {
+    super(props)
+  }
+  componentDidMount() {
+    this.refs.wrapper.style.minHeight = window.innerHeight + 'px'
+  }
   onSubmit = (dream) => {
     this.props.editDream(this.props.dream.id, dream)
     this.props.history.push('/dreams')
@@ -14,7 +20,7 @@ class EditDreamPage extends React.Component {
   }
   render() {
     return (
-      <div className="wrapper">
+      <div className="wrapper" ref="wrapper">
         <DreamForm
           dream={this.props.dream}
           onSubmit={this.onSubmit}
