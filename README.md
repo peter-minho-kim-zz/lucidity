@@ -12,7 +12,7 @@ The key to lucid dreaming is to consistently document one's dreams so that patte
 
 ![Lucidity Dreams Page](./public/images/dreams.png)
 
-
+![Lucidity Add Dream Page](./public/images/add-dream.png)
 
 ## Getting Started
 ### Installing
