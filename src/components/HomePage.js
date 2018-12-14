@@ -108,12 +108,6 @@ export const HomePage = () => {
           <Link 
             to="/dashboard" 
             className="btn btn--blue" 
-            onClick={() => {
-              window.scrollTo({
-                top: 0,
-                behavior: 'smooth'
-              })
-            }}
           >
           lucidity demo
           </Link>
