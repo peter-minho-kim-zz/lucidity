@@ -11,7 +11,7 @@
   grid-template-rows: repeat(5, 1fr);
 
   @media (max-width: 46.875em) {
-    grid-template-rows: repeat(11, 1fr);
+    grid-template-rows: repeat(12, 1fr);
   }
 
   &__error {

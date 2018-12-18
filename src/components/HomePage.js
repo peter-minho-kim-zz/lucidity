@@ -38,7 +38,7 @@ export const HomePage = () => {
             <img src="../images/easy-to-use.png" alt="Easy to use" className="img card--1-img" />
             <div className="card__text-box">
               <p className="card__main-text u-margin-bottom-small">Easy to Use</p>
-              <p className="card__sub-text">Lucidity makes it easy to record your dreams and track your progress</p>
+              <p className="card__sub-text">Record your dreams and track your progress with ease</p>
               </div>
           </div>
           <div className="card">
@@ -116,9 +116,8 @@ export const HomePage = () => {
 
       <footer className="footer u-margin-bottom-big">
         <div className="footer__brand-container">
-          <img src="../images/lucidity-brand.png" className="footer__brand u-margin-bottom-small" alt="lucidity brand"/>
           <p className="footer__author-text">
-            <i className="fas fa-code"></i> Peter Kim
+            Created by Peter Kim
           </p>
           <div className="footer__social-media u-margin-bottom-small ">
             <a href="https://github.com/peter-minho-kim" target="_blank"><i className="fab fa-github"></i></a>
