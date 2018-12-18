@@ -26,13 +26,15 @@
     .heading-primary--main {
       font-size: $xxxl-font-size;
       text-transform: uppercase;
+      background: -webkit-linear-gradient(top left, $light-blue, $light-pink);
       background-image: -webkit-gradient(linear, left top, right bottom, from($light-blue), to($light-pink));
       background-image: -webkit-linear-gradient(top left, $light-blue, $light-pink);
       background-image: -o-linear-gradient(top left, $light-blue, $light-pink);
       background-image: linear-gradient(to bottom right, $light-blue, $light-pink);
       -webkit-background-clip: text;
               background-clip: text;
-      color: transparent;
+      -webkit-text-fill-color: transparent;
+                        color: transparent;
 
       @media (max-width: 25.375em) {
         font-size: $xl-font-size;
