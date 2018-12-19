@@ -14,14 +14,20 @@ The key to lucid dreaming is to consistently document one's dreams so that patte
 
 ![Lucidity Add Dream Page](./public/images/add-dream.png)
 
-## Adobe XD Prototype
+## Home Page Prototype
 ![Lucidity Home Page Wireframe](./public/images/Homepage-wireframe.png)
 
+## Dashboard Page Prototype
 ![Lucidity Dashboard Page Wireframe](./public/images/Dashboard-wireframe.png)
 
+## Dreams Page Prototype
 ![Lucidity Dreams Page Wireframe](./public/images/Dreams-wireframe.png)
 
+## Dream Form Prototype
 ![Lucidity Add Dream Page Wireframe](./public/images/Add-Dream-wireframe.png)
+
+## User Flow
+![Lucidity User Flow](./public/images/lucidity-user-flow.png)
 
 
 ## Getting Started
