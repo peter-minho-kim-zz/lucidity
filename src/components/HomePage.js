@@ -7,7 +7,7 @@ export const HomePage = () => {
       <section className="section section--one fade-in-bottom">
         <div className="section--one__text-box u-center-text">
           <h1 className="heading-primary u-margin-bottom-medium">
-            <span className="heading-primary--main u-margin-bottom-small">experience lucid dreaming</span>
+            <span className="heading-primary--main u-margin-bottom-small">experience lucidity</span>
             <span className="heading-primary--sub">
               Lucidity helps you become aware that you’re dreaming and gain the ability to control your dreams. 
               Transform your dream world into a playground of infinite possibility.
