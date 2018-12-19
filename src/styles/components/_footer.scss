@@ -40,6 +40,16 @@
   &__brand-container {
     text-align: center;
   }
+
+  a {
+    color: $white;
+    text-decoration: none;
+    transition: color .3s;
+
+    &:hover {
+      color: $light-pink;
+    }
+  }
 }
 
 .copyright-text {

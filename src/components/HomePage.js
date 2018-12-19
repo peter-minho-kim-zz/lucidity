@@ -126,8 +126,8 @@ export class HomePage extends React.Component {
         <footer className="footer u-margin-bottom-big">
           <div className="footer__brand-container">
             <p className="footer__author-text">
-              Created by Peter Kim
-          </p>
+              Created by <a href="http://www.peterkim.io/" target="_blank">Peter Kim</a>
+            </p>
             <div className="footer__social-media u-margin-bottom-small ">
               <a href="https://github.com/peter-minho-kim" target="_blank"><i className="fab fa-github"></i></a>
               <a href="https://www.linkedin.com/in/peter-kim-developer/" target="_blank"><i className="fab fa-linkedin"></i></a>
