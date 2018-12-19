@@ -35,6 +35,7 @@
               background-clip: text;
       -webkit-text-fill-color: transparent;
                         color: transparent;
+      line-height: .9;
 
       @media (max-width: 31.0625em) {
         font-size: $xxl-font-size;
