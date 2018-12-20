@@ -11,7 +11,7 @@ class DreamList extends React.Component {
     // Remove fade-in-bottom animation class to avoid conflict with calendar
     setTimeout(() => {
       this.refs.dreamList.classList.remove('fade-in-bottom')
-    }, 1200)
+    }, 1600)
   }
   render() {
     return (

@@ -1,4 +1,5 @@
 import React from 'react'
+import DreamLegend from './DreamLegend'
 import DreamList from './DreamList'
 import DreamListFilters from './DreamListFilters'
 import DreamViewSummary from './DreamViewSummary'
@@ -16,6 +17,7 @@ class DreamsPage extends React.Component {
       <div className="wrapper" ref="wrapper">
         <DreamViewSummary />
         <DreamListFilters />
+        <DreamLegend />
         <DreamList />
       </div>
     )

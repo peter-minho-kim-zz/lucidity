@@ -1,0 +1,23 @@
+.dream-legend {
+  color: $white;
+  font-size: $s-font-size;
+  text-align: right;
+
+  @media (max-width: 41.5625em) {
+    text-align: center;
+  }
+
+  i {
+    animation-delay: .6s;
+    margin-right: .5rem;
+  }
+
+  &__text {
+    animation-delay: .6s;
+    display: inline-block;
+
+    &:not(:last-child) {
+      margin-right: 1.5rem;
+    }
+  }
+}
